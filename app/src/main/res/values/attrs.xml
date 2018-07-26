@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Line2TextView">
+        <!-- 第一行文字颜色 -->
+        <attr name="ms_line1_text_color" format="color"/>
+        <!-- 第一行文字字体大小 -->
+        <attr name="ms_line1_text_size" format="dimension"/>
+        <!-- 第一行文字对齐方式-->
+        <attr name="ms_line1_align" format="enum">
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <!-- 第一行文字边距 -->
+        <attr name="ms_line1_margin" format="dimension"/>
+        <!-- 第一行文字内容 -->
+        <attr name="ms_line1_text" format="string"/>
+
+        <!-- 两行文字的间距 -->
+        <attr name="ms_line_space" format="dimension"/>
+
+        <!-- 第二行文字颜色 -->
+        <attr name="ms_line2_text_color" format="color"/>
+        <!-- 第二行文字字体大小 -->
+        <attr name="ms_line2_text_size" format="dimension"/>
+        <!-- 第二行文字对齐方式-->
+        <attr name="ms_line2_align" format="enum">
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <!-- 第二行文字边距 -->
+        <attr name="ms_line2_margin" format="dimension"/>
+        <!-- 第二行文字内容 -->
+        <attr name="ms_line2_text" format="string"/>
+
+
+    </declare-styleable>
+
+    <!-- 圆角按钮 -->
+    <declare-styleable name="MsButton">
+        <!-- 圆角 -->
+        <attr name="corner" format="dimension" />
+        <!-- 默认颜色 -->
+        <attr name="normal_color" format="color" />
+        <!-- 按下颜色 -->
+        <attr name="pressed_color" format="color" />
+        <!-- 不可用的颜色 -->
+        <attr name="disabled_color" format="color" />
+    </declare-styleable>
+</resources>
