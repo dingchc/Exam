@@ -3,7 +3,7 @@ package com.cmcc.library.wrapper.retrofit.core;
 
 import com.cmcc.library.wrapper.retrofit.listener.DownloadProgressListener;
 import com.cmcc.library.wrapper.retrofit.listener.UploadProgressListener;
-import com.cmcc.library.wrapper.retrofit.util.MSAppLogger;
+import com.cmcc.library.wrapper.retrofit.util.CMAppLogger;
 
 import java.util.concurrent.TimeUnit;
 
@@ -11,7 +11,8 @@ import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 
 /**
- * Created by liupeng_a on 2017/1/10.
+ * OKHttpClient生成类
+ * @author Ding
  */
 
 public class HttpClientHelper {
@@ -22,19 +23,19 @@ public class HttpClientHelper {
             .connectTimeout(CONNECT_TIMEOUT, TimeUnit.MILLISECONDS)
             .readTimeout(READ_TIMEOUT, TimeUnit.MILLISECONDS);
 
-    static HttpLoggingInterceptor logger = new HttpLoggingInterceptor();
+    private static HttpLoggingInterceptor logger = new HttpLoggingInterceptor();
 
     /**
      * 普通请求
      *
-     * @return
+     * @return OkHttpClient
      */
-    public static OkHttpClient getHttpClient() {
+    static OkHttpClient getHttpClient() {
 
 
         builder.interceptors().clear();
 
-        if (MSAppLogger.BuildConfig.DEBUG) {
+        if (CMAppLogger.BuildConfig.DEBUG) {
 
             logger.setLevel(HttpLoggingInterceptor.Level.BODY);
             if (!builder.interceptors().contains(logger)) {
@@ -46,27 +47,19 @@ public class HttpClientHelper {
     }
 
     /**
-     * 下载文件
+     * 下载文件, 支持断点续传
      *
-     * @param listener       回调
-     * @param isSupportRange 是否支持断点续传
-     * @return
+     * @param listener 回调
+     * @return OkHttpClient
      */
-    public static OkHttpClient getDownloadHttpClient(DownloadProgressListener listener, boolean isSupportRange) {
+    static OkHttpClient getDownloadHttpClient(DownloadProgressListener listener) {
 
         builder.interceptors().clear();
 
-        if (isSupportRange) {
+        return builder
+                .addInterceptor(new DownloadRangeInterceptor(listener))
+                .build();
 
-            return builder
-                    .addInterceptor(new DownloadRangeInterceptor(listener))
-                    .build();
-
-        } else {
-            return builder
-                    .addInterceptor(new DownloadInterceptor(listener))
-                    .build();
-        }
 
     }
 
@@ -74,7 +67,7 @@ public class HttpClientHelper {
      * 上传文件
      *
      * @param listener 回调
-     * @return
+     * @return OkHttpClient
      */
     public static OkHttpClient getUploadHttpClient(UploadProgressListener listener) {
 

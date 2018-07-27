@@ -5,21 +5,20 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.text.TextUtils;
 
-import com.cmcc.library.wrapper.retrofit.core.MSHttpException;
+import com.cmcc.library.wrapper.retrofit.core.CMHttpException;
 import com.cmcc.library.wrapper.retrofit.core.DownloadRangeImpl;
 import com.cmcc.library.wrapper.retrofit.core.HttpService;
 import com.cmcc.library.wrapper.retrofit.core.RetrofitClient;
 import com.cmcc.library.wrapper.retrofit.listener.HttpCallback;
 import com.cmcc.library.wrapper.retrofit.listener.HttpProgressCallback;
 import com.cmcc.library.wrapper.retrofit.listener.UploadProgressListener;
-import com.cmcc.library.wrapper.retrofit.model.HttpTracker;
-import com.cmcc.library.wrapper.retrofit.model.MSResponse;
-import com.cmcc.library.wrapper.retrofit.model.MSBaseResponse;
-import com.cmcc.library.wrapper.retrofit.model.MSUploadFileInfo;
-import com.cmcc.library.wrapper.retrofit.util.MSAppLogger;
-import com.cmcc.library.wrapper.retrofit.util.MSDirUtil;
-import com.cmcc.library.wrapper.retrofit.util.MSMultiPartUtil;
-import com.cmcc.library.wrapper.retrofit.util.MSUtil;
+import com.cmcc.library.wrapper.retrofit.model.CMHttpTracker;
+import com.cmcc.library.wrapper.retrofit.model.CMResponse;
+import com.cmcc.library.wrapper.retrofit.model.CMBaseResponse;
+import com.cmcc.library.wrapper.retrofit.model.CMUploadFileInfo;
+import com.cmcc.library.wrapper.retrofit.util.CMAppLogger;
+import com.cmcc.library.wrapper.retrofit.util.CMMultiPartUtil;
+import com.cmcc.library.wrapper.retrofit.util.CMUtil;
 import com.google.gson.Gson;
 
 import java.io.File;
@@ -42,9 +41,11 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * 请求类
+ * 请求核心类
  * 请先调用下setAppContext方法，下载情况需要读取默认存储
- * Created by Ding on 2/28/17.
+ *
+ * @author Ding
+ *         Created by Ding on 2/28/17.
  */
 
 public enum HttpController {
@@ -55,7 +56,7 @@ public enum HttpController {
     INSTANCE;
 
     private final String EMPTY_STR = "";
-    private ConcurrentHashMap<HttpTracker, WeakReference<ResourceObserver>> requestMap;
+    private ConcurrentHashMap<CMHttpTracker, WeakReference<ResourceObserver>> requestMap;
 
     HttpController() {
         requestMap = new ConcurrentHashMap();
@@ -67,7 +68,7 @@ public enum HttpController {
      * @param context 上下文
      */
     public void setAppContext(Context context) {
-        MSStaticWrapper.setAppContext(context);
+        CMStaticWrapper.setAppContext(context);
     }
 
 
@@ -78,9 +79,9 @@ public enum HttpController {
      * @param params   参数
      * @param callback 回调
      */
-    public HttpTracker doGet(final String url, Map<String, String> params, final HttpCallback callback) {
+    public CMHttpTracker doGet(final String url, Map<String, String> params, final HttpCallback callback) {
 
-        final HttpTracker tracker = new HttpTracker(url);
+        final CMHttpTracker tracker = new CMHttpTracker(url);
 
         ResourceObserver subscriber = new ResourceObserver<ResponseBody>() {
             @Override
@@ -92,7 +93,7 @@ public enum HttpController {
             @Override
             public void onError(Throwable e) {
 
-                MSAppLogger.e("onError");
+                CMAppLogger.e("onError");
 
                 if (callback != null) {
                     callback.onException(e);
@@ -104,7 +105,7 @@ public enum HttpController {
             public void onNext(ResponseBody responseBody) {
                 try {
 
-                    MSAppLogger.i("thread=" + Thread.currentThread().getName());
+                    CMAppLogger.i("thread=" + Thread.currentThread().getName());
                     byte[] data = responseBody.bytes();
 
                     printByteArray(data);
@@ -112,7 +113,7 @@ public enum HttpController {
                     Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0,
                             data.length);
 
-                    MSAppLogger.i("bitmap.getWidth()=" + bitmap.getWidth() +", " + bitmap.getHeight() + ", " + responseBody);
+                    CMAppLogger.i("bitmap.getWidth()=" + bitmap.getWidth() + ", " + bitmap.getHeight() + ", " + responseBody);
 
 //                    String json = responseBody.string();
                     String json = new String(data, "utf-8");
@@ -174,9 +175,9 @@ public enum HttpController {
      * @param params   参数
      * @param callback 回调
      */
-    public HttpTracker doPost(final String url, Map<String, String> params, final HttpCallback callback) {
+    public CMHttpTracker doPost(final String url, Map<String, String> params, final HttpCallback callback) {
 
-        final HttpTracker tracker = new HttpTracker(url);
+        final CMHttpTracker tracker = new CMHttpTracker(url);
 
         ResourceObserver subscriber = new ResourceObserver<ResponseBody>() {
             @Override
@@ -188,7 +189,7 @@ public enum HttpController {
             @Override
             public void onError(Throwable e) {
 
-                MSAppLogger.e("onError");
+                CMAppLogger.e("onError");
 
                 if (callback != null) {
                     callback.onException(e);
@@ -202,7 +203,7 @@ public enum HttpController {
 
                     String json = responseBody.string();
 
-                    MSAppLogger.i("json=" + json);
+                    CMAppLogger.i("json=" + json);
 
                     if (callback != null) {
                         callback.onSuccess(null, json);
@@ -231,9 +232,9 @@ public enum HttpController {
      * @param clazz    转Json的类
      * @param callback 回调
      */
-    public HttpTracker doPost(final String url, Map<String, String> params, final Class<? extends MSBaseResponse> clazz, final HttpCallback callback) {
+    public CMHttpTracker doPost(final String url, Map<String, String> params, final Class<? extends CMBaseResponse> clazz, final HttpCallback callback) {
 
-        final HttpTracker tracker = new HttpTracker(url);
+        final CMHttpTracker tracker = new CMHttpTracker(url);
 
         ResourceObserver subscriber = new ResourceObserver<ResponseBody>() {
             @Override
@@ -245,7 +246,7 @@ public enum HttpController {
             @Override
             public void onError(Throwable e) {
 
-                MSAppLogger.e("onError");
+                CMAppLogger.e("onError");
 
                 if (callback != null) {
                     callback.onException(e);
@@ -261,9 +262,9 @@ public enum HttpController {
 
                     String json = responseBody.string();
 
-                    MSAppLogger.i("json=" + json);
+                    CMAppLogger.i("json=" + json);
 
-                    MSBaseResponse t = gson.fromJson(json, clazz);
+                    CMBaseResponse t = gson.fromJson(json, clazz);
 
                     if (callback != null) {
                         callback.onSuccess(t, json);
@@ -292,9 +293,9 @@ public enum HttpController {
      * @param type     转Json的TypeToken
      * @param callback 回调
      */
-    public HttpTracker doPost(final String url, Map<String, String> params, final Type type, final HttpCallback callback) {
+    public CMHttpTracker doPost(final String url, Map<String, String> params, final Type type, final HttpCallback callback) {
 
-        final HttpTracker tracker = new HttpTracker(url);
+        final CMHttpTracker tracker = new CMHttpTracker(url);
 
         ResourceObserver subscriber = new ResourceObserver<ResponseBody>() {
             @Override
@@ -306,7 +307,7 @@ public enum HttpController {
             @Override
             public void onError(Throwable e) {
 
-                MSAppLogger.e("onError");
+                CMAppLogger.e("onError");
 
                 if (callback != null) {
                     callback.onException(e);
@@ -323,9 +324,9 @@ public enum HttpController {
 
                     String json = responseBody.string();
 
-                    MSAppLogger.i("json=" + json);
+                    CMAppLogger.i("json=" + json);
 
-                    MSResponse t = gson.fromJson(json, type);
+                    CMResponse t = gson.fromJson(json, type);
 
                     if (callback != null) {
                         callback.onSuccess(t, json);
@@ -347,135 +348,35 @@ public enum HttpController {
     }
 
     /**
-     * 下载文件(如果文件已存在，直接返回结果)
-     *
-     * @param url      下载地址
-     * @param callback 回调
-     */
-    public HttpTracker downloadFile(final String url, final HttpCallback callback) {
-
-        // 检查全局上下文是否已设置
-        if (MSUtil.checkObjNotNull(callback) && !MSUtil.checkObjNotNull(MSStaticWrapper.getAppContext())) {
-            callback.onException(new Exception("must call method setAppContext in MSStaticWrapper.java"));
-            return null;
-        }
-        // 如果是本地文件，直接返回
-        if (!MSUtil.isWebUrl(url) && MSUtil.checkObjNotNull(callback)) {
-
-            MSResponse<String> esResponse = new MSResponse<>();
-            esResponse.data = url;
-            callback.onSuccess(esResponse, null);
-            return null;
-        }
-
-
-        final HttpTracker tracker = new HttpTracker(url);
-
-        final ResourceObserver subscriber = new ResourceObserver<String>() {
-            @Override
-            public void onComplete() {
-                // 删除请求的订阅者
-                requestMap.remove(tracker);
-            }
-
-            @Override
-            public void onError(Throwable e) {
-
-                MSAppLogger.e("onError");
-
-                if (callback != null) {
-                    callback.onException(e);
-                }
-
-                requestMap.remove(tracker);
-            }
-
-            @Override
-            public void onNext(String path) {
-
-                MSResponse<String> esResponse = new MSResponse<>();
-                esResponse.data = path;
-
-                if (!TextUtils.isEmpty(path)) {
-                    if (callback != null) {
-                        callback.onSuccess(esResponse, null);
-                    }
-                } else {
-                    if (callback != null) {
-                        callback.onException(new MSHttpException("下载中断", MSHttpException.CODE_REQUEST_INTERCEPTED));
-                    }
-                }
-
-            }
-        };
-
-        requestMap.put(tracker, new WeakReference(subscriber));
-
-        RetrofitClient.getInstance().createDownloadService(HttpService.class, null).downloadFile(url)
-                .map(new Function<ResponseBody, String>() {
-
-                    @Override
-                    public String apply(ResponseBody response) {
-
-                        String fileName = MSUtil.getFileName(url);
-                        String path = MSDirUtil.getValidPath(MSDirUtil.getDownloadDir(), fileName);
-
-                        try {
-                            boolean isSuccess = writeFile(response, path, false, null);
-
-                            if (!isSuccess) {
-
-                                // 删除已下载的文件
-                                MSUtil.deleteAFile(path);
-                                return EMPTY_STR;
-                            }
-
-                        } catch (Exception e) {
-//                            subscriber.onError(e);
-//                            e.printStackTrace();
-                            return EMPTY_STR;
-                        }
-
-                        return path;
-                    }
-                })
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(subscriber);
-
-        return tracker;
-    }
-
-    /**
      * 断点下载
      *
      * @param url      下载地址
      * @param callback 回调
      * @return 跟踪
      */
-    public HttpTracker downloadFileByRange(final String url, final HttpProgressCallback callback) {
+    public CMHttpTracker downloadFileByRange(final String url, final HttpProgressCallback callback) {
 
         // 检查全局上下文是否已设置
-        if (MSUtil.checkObjNotNull(callback) && !MSUtil.checkObjNotNull(MSStaticWrapper.getAppContext())) {
+        if (CMUtil.checkObjNotNull(callback) && !CMUtil.checkObjNotNull(CMStaticWrapper.getAppContext())) {
             callback.onException(new Exception("must call method setAppContext in MSStaticWrapper.java"));
             return null;
         }
 
         // 如果是本地文件，直接返回
-        if (!MSUtil.isWebUrl(url) && MSUtil.checkObjNotNull(callback)) {
+        if (!CMUtil.isWebUrl(url) && CMUtil.checkObjNotNull(callback)) {
 
-            MSResponse<String> esResponse = new MSResponse<>();
+            CMResponse<String> esResponse = new CMResponse<>();
             esResponse.data = url;
             callback.onSuccess(esResponse, null);
             return null;
         }
 
-        final HttpTracker tracker = new HttpTracker(url);
+        final CMHttpTracker tracker = new CMHttpTracker(url);
 
         final ResourceObserver subscriber = new ResourceObserver<String>() {
             @Override
             public void onComplete() {
-                MSAppLogger.i("onComplete");
+                CMAppLogger.i("onComplete");
                 // 删除请求的订阅者
                 requestMap.remove(tracker);
             }
@@ -483,7 +384,7 @@ public enum HttpController {
             @Override
             public void onError(Throwable e) {
 
-                MSAppLogger.e("onError" + e.getMessage());
+                CMAppLogger.e("onError" + e.getMessage());
 
                 if (callback != null) {
                     callback.onException(e);
@@ -495,9 +396,9 @@ public enum HttpController {
             @Override
             public void onNext(String path) {
 
-                MSAppLogger.i("onNext " + path);
+                CMAppLogger.i("onNext " + path);
 
-                MSResponse<String> esResponse = new MSResponse<>();
+                CMResponse<String> esResponse = new CMResponse<>();
                 esResponse.data = path;
 
                 if (!TextUtils.isEmpty(path)) {
@@ -506,7 +407,7 @@ public enum HttpController {
                     }
                 } else {
                     if (callback != null) {
-                        callback.onException(new MSHttpException("下载中断", MSHttpException.CODE_REQUEST_INTERCEPTED));
+                        callback.onException(new CMHttpException("下载中断", CMHttpException.CODE_REQUEST_INTERCEPTED));
                     }
                 }
             }
@@ -515,9 +416,9 @@ public enum HttpController {
         final DownloadRangeImpl downloadImpl = new DownloadRangeImpl(url, callback);
 
         // 文件已存在，直接返回
-        if (MSUtil.checkFileExist(downloadImpl.getDestPath())) {
+        if (CMUtil.checkFileExist(downloadImpl.getDestPath())) {
 
-            MSResponse<String> esResponse = new MSResponse<>();
+            CMResponse<String> esResponse = new CMResponse<>();
             esResponse.data = downloadImpl.getDestPath();
 
             if (callback != null) {
@@ -542,18 +443,17 @@ public enum HttpController {
                         try {
                             boolean isSuccess = writeFile(response, tempPath, downloadImpl.isSupportRange(), downloadImpl);
 
-                            MSAppLogger.i("isSuccess="+isSuccess);
+                            CMAppLogger.i("isSuccess=" + isSuccess);
                             if (!isSuccess) {
-                                MSAppLogger.i("return null");
+                                CMAppLogger.i("return null");
                                 return EMPTY_STR;
                             }
                         } catch (Exception e) {
-//                            subscriber.onError(e);
                             return EMPTY_STR;
                         }
 
                         destPath = downloadImpl.getDestPath();
-                        MSUtil.moveFile(tempPath, destPath);
+                        CMUtil.moveFile(tempPath, destPath);
 
                         return destPath;
                     }
@@ -574,18 +474,18 @@ public enum HttpController {
      * @param uploadFileInfoList 文件list
      * @param callback           回调
      */
-    public HttpTracker doUpload(final String url, TreeMap<String, String> paramMap, final Type type, final List<MSUploadFileInfo> uploadFileInfoList, final HttpProgressCallback callback) {
+    public CMHttpTracker doUpload(final String url, TreeMap<String, String> paramMap, final Type type, final List<CMUploadFileInfo> uploadFileInfoList, final HttpProgressCallback callback) {
 
         if (uploadFileInfoList == null || uploadFileInfoList.size() <= 0) {
 
-            if (MSUtil.checkObjNotNull(callback)) {
-                callback.onException(new MSHttpException("no input file", MSHttpException.CODE_DEFAULT));
+            if (CMUtil.checkObjNotNull(callback)) {
+                callback.onException(new CMHttpException("no input file", CMHttpException.CODE_DEFAULT));
             }
 
             return null;
         }
 
-        final HttpTracker tracker = new HttpTracker(url);
+        final CMHttpTracker tracker = new CMHttpTracker(url);
 
         // 上传的回调
         UploadProgressListener progressListener = new UploadProgressListener() {
@@ -602,7 +502,7 @@ public enum HttpController {
         // 创建调用
         HttpService api = RetrofitClient.getInstance().createUploadService(HttpService.class, progressListener);
 
-        MSUploadFileInfo[] fileInfoArray = new MSUploadFileInfo[uploadFileInfoList.size()];
+        CMUploadFileInfo[] fileInfoArray = new CMUploadFileInfo[uploadFileInfoList.size()];
 
         uploadFileInfoList.toArray(fileInfoArray);
 
@@ -615,13 +515,13 @@ public enum HttpController {
             public void onComplete() {
                 // 删除请求的订阅者
                 requestMap.remove(tracker);
-                MSAppLogger.i("onCompleted");
+                CMAppLogger.i("onCompleted");
             }
 
             @Override
             public void onError(Throwable e) {
 
-                MSAppLogger.i("onError");
+                CMAppLogger.i("onError");
 
                 if (callback != null) {
                     callback.onException(e);
@@ -639,11 +539,11 @@ public enum HttpController {
 
                     String json = responseBody.string();
 
-                    MSAppLogger.i("onNext json = " + json);
+                    CMAppLogger.i("onNext json = " + json);
 
-                    MSResponse t = null;
+                    CMResponse t = null;
 
-                    if (MSUtil.checkObjNotNull(type)) {
+                    if (CMUtil.checkObjNotNull(type)) {
                         t = gson.fromJson(json, type);
                     }
 
@@ -677,7 +577,7 @@ public enum HttpController {
      * @param fileInfos 文件
      * @return Part数组
      */
-    private MultipartBody.Part[] createMultipartBodyPartArray(MSUploadFileInfo... fileInfos) {
+    private MultipartBody.Part[] createMultipartBodyPartArray(CMUploadFileInfo... fileInfos) {
 
         MultipartBody.Part[] parts = null;
 
@@ -687,9 +587,9 @@ public enum HttpController {
 
             int i = 0;
 
-            for (MSUploadFileInfo fileInfo : fileInfos) {
+            for (CMUploadFileInfo fileInfo : fileInfos) {
 
-                String fileName = MSUtil.getFileName(fileInfo.filePath);
+                String fileName = CMUtil.getFileName(fileInfo.filePath);
 
                 if (!TextUtils.isEmpty(fileName)) {
                     RequestBody requestBody = RequestBody.create(MultipartBody.FORM, new File(fileInfo.filePath));
@@ -716,7 +616,7 @@ public enum HttpController {
         if (map != null) {
             for (String key : map.keySet()) {
 
-                bodyTreeMap.put(key, MSMultiPartUtil.createPartFromString(map.get(key)));
+                bodyTreeMap.put(key, CMMultiPartUtil.createPartFromString(map.get(key)));
             }
         }
 
@@ -728,16 +628,16 @@ public enum HttpController {
      *
      * @param tracker 请求地址
      */
-    public void cancelRequest(HttpTracker tracker) {
+    public void cancelRequest(CMHttpTracker tracker) {
 
-        if (MSUtil.checkObjNotNull(tracker)) {
+        if (CMUtil.checkObjNotNull(tracker)) {
 
             if (requestMap.containsKey(tracker)) {
                 WeakReference<ResourceObserver> weakReference = requestMap.get(tracker);
                 ResourceObserver subscriber = weakReference.get();
 
-                if (MSUtil.checkObjNotNull(subscriber)) {
-                    subscriber.onError(new MSHttpException("cancel request", MSHttpException.CODE_REQUEST_CANCELED));
+                if (CMUtil.checkObjNotNull(subscriber)) {
+                    subscriber.onError(new CMHttpException("cancel request", CMHttpException.CODE_REQUEST_CANCELED));
                     subscriber.dispose();
                 }
             }
@@ -755,14 +655,14 @@ public enum HttpController {
 
         boolean ret = false;
 
-        for (HttpTracker httpTracker : requestMap.keySet()) {
-            if (MSUtil.checkObjNotNull(httpTracker) && !TextUtils.isEmpty(httpTracker.getUrl()) && httpTracker.getUrl().equals(url)) {
+        for (CMHttpTracker httpTracker : requestMap.keySet()) {
+            if (CMUtil.checkObjNotNull(httpTracker) && !TextUtils.isEmpty(httpTracker.getUrl()) && httpTracker.getUrl().equals(url)) {
                 ret = true;
                 break;
             }
         }
 
-        MSAppLogger.i("ret="+ret);
+        CMAppLogger.i("ret=" + ret);
 
         return ret;
     }
@@ -798,7 +698,7 @@ public enum HttpController {
 
             inputStream = responseBody.byteStream();
 
-            MSAppLogger.i("downloadSize=" + downloadSize + ",availableSize=" + availableSize + ",total=" + total + ", current=" + current);
+            CMAppLogger.i("downloadSize=" + downloadSize + ",availableSize=" + availableSize + ",total=" + total + ", current=" + current);
 
             outputStream = new FileOutputStream(saveFile, isSupportRange);
 
@@ -811,7 +711,7 @@ public enum HttpController {
 
                 current += read;
 
-                if (MSUtil.checkObjNotNull(downloadRangeImpl)) {
+                if (CMUtil.checkObjNotNull(downloadRangeImpl)) {
                     downloadRangeImpl.sendProgressMessage(current, total);
                 }
             }
@@ -821,7 +721,7 @@ public enum HttpController {
             ret = true;
         } catch (Exception e) {
 //            e.printStackTrace();
-            MSAppLogger.e(e.getMessage());
+            CMAppLogger.e(e.getMessage());
 //            throw new MSHttpException("download intercept", MSHttpException.CODE_REQUEST_INTERCEPTED);
             ret = false;
         } finally {

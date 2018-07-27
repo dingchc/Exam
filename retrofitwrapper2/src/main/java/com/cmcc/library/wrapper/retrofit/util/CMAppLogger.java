@@ -1,12 +1,12 @@
 package com.cmcc.library.wrapper.retrofit.util;
 
 
-public class MSAppLogger {
+public class CMAppLogger {
 
     public static final String TAG = "MSLibrary";
     public static final String TAG1 = "*upload";
 
-    private MSAppLogger() {
+    private CMAppLogger() {
     }
 
     /**

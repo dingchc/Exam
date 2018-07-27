@@ -4,8 +4,8 @@ import android.text.TextUtils;
 
 
 import com.cmcc.library.wrapper.retrofit.listener.DownloadProgressListener;
-import com.cmcc.library.wrapper.retrofit.util.MSAppLogger;
-import com.cmcc.library.wrapper.retrofit.util.MSUtil;
+import com.cmcc.library.wrapper.retrofit.util.CMAppLogger;
+import com.cmcc.library.wrapper.retrofit.util.CMUtil;
 
 import java.io.File;
 import java.io.IOException;
@@ -49,9 +49,9 @@ public class DownloadRangeInterceptor implements Interceptor {
         // 设置需要断点续传，及上次下次下载的Size
         if (isSupportRange && downloadSize > 0) {
 
-            MSAppLogger.i("downloadSize="+downloadSize);
+            CMAppLogger.i("downloadSize="+downloadSize);
 
-            if (MSUtil.checkObjNotNull(response)) {
+            if (CMUtil.checkObjNotNull(response)) {
                 response.close();
             }
             response = chain.proceed(originRequest.newBuilder().addHeader("RANGE", "bytes=" + downloadSize + "-").build());
@@ -60,21 +60,21 @@ public class DownloadRangeInterceptor implements Interceptor {
         headers = response.headers();
 //        printHeader(headers);
 
-        MSAppLogger.i("isSupportRange="+isSupportRange + ", content-range=" + headers.get("Content-Range"));
+        CMAppLogger.i("isSupportRange="+isSupportRange + ", content-range=" + headers.get("Content-Range"));
 
         // 经过测试发现，即使服务器返回头包含"Accept-Ranges"字段，服务器也未必支持断点下载
         // 友好的方式是判断Content-Range字段中，返回内容的开始位置是不是跟请求的downloadSize大小一致
         // 例如：(bytes 1017492-8165173/8165174)
         if (isSupportRange && downloadSize > 0) {
             String contentRange = headers.get("Content-Range");
-            long rangeStart = MSUtil.getRangeStartSize(contentRange);
+            long rangeStart = CMUtil.getRangeStartSize(contentRange);
             if (rangeStart != downloadSize) {
                 isSupportRange = false;
             }
         }
 
         // 设置已下载大小
-        if (MSUtil.checkObjNotNull(listener) && listener instanceof DownloadRangeImpl && isSupportRange) {
+        if (CMUtil.checkObjNotNull(listener) && listener instanceof DownloadRangeImpl && isSupportRange) {
             DownloadRangeImpl downloadImpl = (DownloadRangeImpl) listener;
             downloadImpl.setDownloadSize(downloadSize);
         }
@@ -93,7 +93,7 @@ public class DownloadRangeInterceptor implements Interceptor {
 
         long downloadSize = 0;
 
-        if (MSUtil.checkObjNotNull(listener) && listener instanceof DownloadRangeImpl) {
+        if (CMUtil.checkObjNotNull(listener) && listener instanceof DownloadRangeImpl) {
             DownloadRangeImpl downloadImpl = (DownloadRangeImpl)listener;
 
             String filePath = downloadImpl.getTempPath();
@@ -114,10 +114,10 @@ public class DownloadRangeInterceptor implements Interceptor {
      * @param headers 头
      */
     private void printHeader(Headers headers) {
-        if (MSUtil.checkObjNotNull(headers)) {
+        if (CMUtil.checkObjNotNull(headers)) {
 
             for (String key : headers.names()) {
-                MSAppLogger.i("key="+key+", value="+headers.get(key));
+                CMAppLogger.i("key="+key+", value="+headers.get(key));
             }
         }
     }

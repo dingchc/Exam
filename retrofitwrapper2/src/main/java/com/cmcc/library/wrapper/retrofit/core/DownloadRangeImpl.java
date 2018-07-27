@@ -4,15 +4,16 @@ import android.os.Looper;
 import android.os.Message;
 import android.text.TextUtils;
 
-import com.cmcc.library.wrapper.retrofit.model.MSProgressInfo;
+import com.cmcc.library.wrapper.retrofit.model.CMProgressInfo;
 import com.cmcc.library.wrapper.retrofit.listener.DownloadProgressListener;
 import com.cmcc.library.wrapper.retrofit.listener.HttpProgressCallback;
-import com.cmcc.library.wrapper.retrofit.util.MSDirUtil;
-import com.cmcc.library.wrapper.retrofit.util.MSUtil;
+import com.cmcc.library.wrapper.retrofit.util.CMDirUtil;
+import com.cmcc.library.wrapper.retrofit.util.CMUtil;
 
 
 /**
  * 断点下载辅助类
+ * @author Ding
  * Created by ding on 4/20/17.
  */
 
@@ -49,8 +50,8 @@ public class DownloadRangeImpl implements DownloadProgressListener {
             return filePath;
         }
 
-        String fileName = MSUtil.getFileName(url);
-        filePath = MSDirUtil.getValidPath(MSDirUtil.getDownloadDir(), fileName);
+        String fileName = CMUtil.getFileName(url);
+        filePath = CMDirUtil.getValidPath(CMDirUtil.getDownloadDir(), fileName);
 
         return filePath;
     }
@@ -69,8 +70,8 @@ public class DownloadRangeImpl implements DownloadProgressListener {
             return filePath;
         }
 
-        String fileName = MSUtil.createTempFileName(MSUtil.getFileName(url));
-        filePath = MSDirUtil.getValidPath(MSDirUtil.getDownloadDir(), fileName);
+        String fileName = CMUtil.createTempFileName(CMUtil.getFileName(url));
+        filePath = CMDirUtil.getValidPath(CMDirUtil.getDownloadDir(), fileName);
 
         return filePath;
     }
@@ -96,7 +97,7 @@ public class DownloadRangeImpl implements DownloadProgressListener {
 
         if (lastNotifyTime <= 0 || duration >= 200 || current == total) {
 
-            if (MSUtil.checkObjNotNull(callback)) {
+            if (CMUtil.checkObjNotNull(callback)) {
                 callback.progress(current, total, current == total);
             }
             lastNotifyTime = System.currentTimeMillis();
@@ -161,7 +162,7 @@ public class DownloadRangeImpl implements DownloadProgressListener {
      */
     public void sendProgressMessage(long current, long total) {
 
-        MSProgressInfo progressInfo = new MSProgressInfo(current, total);
+        CMProgressInfo progressInfo = new CMProgressInfo(current, total);
 
         Message msg = Message.obtain();
         msg.what = DownloadHandler.WHAT_UPDATE;
@@ -189,9 +190,9 @@ public class DownloadRangeImpl implements DownloadProgressListener {
 
                 if (msg.what == WHAT_UPDATE) {
 
-                    if (MSUtil.checkObjNotNull(msg.obj)) {
+                    if (CMUtil.checkObjNotNull(msg.obj)) {
 
-                        MSProgressInfo progressInfo = (MSProgressInfo) msg.obj;
+                        CMProgressInfo progressInfo = (CMProgressInfo) msg.obj;
 
                         long total = progressInfo.total;
                         long current = progressInfo.current;

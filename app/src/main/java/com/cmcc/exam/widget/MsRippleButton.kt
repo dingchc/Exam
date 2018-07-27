@@ -12,7 +12,6 @@ import android.util.AttributeSet
 import android.widget.Button
 import com.cmcc.exam.AppLogger
 import com.cmcc.exam.R
-import okhttp3.internal.Util
 
 /**
  * 标准按钮

@@ -6,9 +6,9 @@ import android.os.Message;
 
 
 import com.cmcc.library.wrapper.retrofit.listener.UploadProgressListener;
-import com.cmcc.library.wrapper.retrofit.model.MSProgressInfo;
-import com.cmcc.library.wrapper.retrofit.util.MSAppLogger;
-import com.cmcc.library.wrapper.retrofit.util.MSUtil;
+import com.cmcc.library.wrapper.retrofit.model.CMProgressInfo;
+import com.cmcc.library.wrapper.retrofit.util.CMAppLogger;
+import com.cmcc.library.wrapper.retrofit.util.CMUtil;
 
 import java.io.IOException;
 
@@ -59,7 +59,7 @@ public class UploadRequestBody extends RequestBody {
 
     private Sink sink(Sink sink) {
 
-        MSAppLogger.i(MSAppLogger.TAG1, "sink");
+        CMAppLogger.i(CMAppLogger.TAG1, "sink");
 
         return new ForwardingSink(sink) {
             long current = 0L;
@@ -84,9 +84,9 @@ public class UploadRequestBody extends RequestBody {
 
                     if (lastNotifyTime <= 0 || duration >= 10 || current == total) {
 
-                        MSAppLogger.i(MSAppLogger.TAG1, "current=" + current + ", total=" + total);
+                        CMAppLogger.i(CMAppLogger.TAG1, "current=" + current + ", total=" + total);
 
-                        MSProgressInfo progressInfo = new MSProgressInfo(current, total);
+                        CMProgressInfo progressInfo = new CMProgressInfo(current, total);
 
                         Message msg = Message.obtain();
                         msg.what = UploadHandler.WHAT_UPDATE;
@@ -129,9 +129,9 @@ public class UploadRequestBody extends RequestBody {
 
                     updateTimes++;
 
-                    if (MSUtil.checkObjNotNull(msg.obj)) {
+                    if (CMUtil.checkObjNotNull(msg.obj)) {
 
-                        MSProgressInfo progressInfo = (MSProgressInfo) msg.obj;
+                        CMProgressInfo progressInfo = (CMProgressInfo) msg.obj;
 
                         long total = progressInfo.total;
                         long current = progressInfo.current;

@@ -4,10 +4,13 @@ import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 
 /**
- * Created by ding on 12/26/16.
+ * MultiPart工具类
+ *
+ * @author Ding
+ *         Created by ding on 12/26/16.
  */
 
-public class MSMultiPartUtil {
+public class CMMultiPartUtil {
 
     public final static String MULTIPART_FORM_DATA = "multipart/form-data";
 

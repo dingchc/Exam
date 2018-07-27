@@ -8,7 +8,7 @@ import java.util.zip.Inflater;
 /**
  * Created by ding on 12/2/15.
  */
-public class MSZLibUtil {
+public class CMZLibUtil {
 
     /**
      * 压缩输入byte数组

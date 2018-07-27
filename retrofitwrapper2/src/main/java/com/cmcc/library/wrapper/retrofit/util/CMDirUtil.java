@@ -2,7 +2,7 @@ package com.cmcc.library.wrapper.retrofit.util;
 
 import android.os.Environment;
 
-import com.cmcc.library.wrapper.retrofit.MSStaticWrapper;
+import com.cmcc.library.wrapper.retrofit.CMStaticWrapper;
 
 import java.io.File;
 
@@ -10,7 +10,7 @@ import java.io.File;
  * SD卡目录创建工具类
  * Created by ding on 11/2/15.
  */
-public class MSDirUtil {
+public class CMDirUtil {
 
     private static final String ROOT = "library";
 
@@ -34,7 +34,7 @@ public class MSDirUtil {
         if (!isExternalStorageMounted())
             return null;
 
-        String filePath = MSStaticWrapper.getAppContext().getExternalCacheDir() + File.separator + ROOT;
+        String filePath = CMStaticWrapper.getAppContext().getExternalCacheDir() + File.separator + ROOT;
 
         if (!createFileDir(filePath)) {
             filePath = null;

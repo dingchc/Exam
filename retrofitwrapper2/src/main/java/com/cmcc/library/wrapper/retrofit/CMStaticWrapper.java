@@ -3,12 +3,15 @@ package com.cmcc.library.wrapper.retrofit;
 import android.content.Context;
 
 /**
+ * @author Ding
  * Created by ding on 4/24/17.
  */
 
-public class MSStaticWrapper {
+public class CMStaticWrapper {
 
-    // 上下文
+    /**
+     * 上下文
+     */
     private static Context appContext;
 
 
@@ -25,6 +28,6 @@ public class MSStaticWrapper {
      * @param appContext 上下文
      */
     public static void setAppContext(Context appContext) {
-        MSStaticWrapper.appContext = appContext;
+        CMStaticWrapper.appContext = appContext;
     }
 }

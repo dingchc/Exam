@@ -23,7 +23,7 @@ import android.graphics.PixelFormat;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 
-import com.cmcc.library.wrapper.retrofit.util.MSAppLogger;
+import com.cmcc.library.wrapper.retrofit.util.CMAppLogger;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -621,7 +621,7 @@ public class ACache {
 
         private File newFile(String key) {
 
-            MSAppLogger.i("cacheDir=" + cacheDir);
+            CMAppLogger.i("cacheDir=" + cacheDir);
             return new File(cacheDir, key.hashCode() + "");
         }
 

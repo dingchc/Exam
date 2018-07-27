@@ -20,9 +20,9 @@ import com.cmcc.exam.utils.ParamsUtil;
 import com.cmcc.library.wrapper.retrofit.HttpController;
 import com.cmcc.library.wrapper.retrofit.listener.HttpCallback;
 import com.cmcc.library.wrapper.retrofit.listener.HttpProgressCallback;
-import com.cmcc.library.wrapper.retrofit.model.MSBaseResponse;
-import com.cmcc.library.wrapper.retrofit.model.MSUploadFileInfo;
-import com.cmcc.library.wrapper.retrofit.util.MSAppLogger;
+import com.cmcc.library.wrapper.retrofit.model.CMBaseResponse;
+import com.cmcc.library.wrapper.retrofit.model.CMUploadFileInfo;
+import com.cmcc.library.wrapper.retrofit.util.CMAppLogger;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -136,13 +136,13 @@ public class LoginApiActivity extends AppCompatActivity {
         mACache = ACache.get(this);
 
         String cacheString = mACache.getAsString("dcc");
-        MSAppLogger.i("cacheString=" + cacheString);
+        CMAppLogger.i("cacheString=" + cacheString);
 
         String picturePath = Environment.getExternalStorageDirectory() + File.separator + "DCIM" + File.separator + "Camera" + File.separator + "1.jpg";
 
         File file = new File(picturePath);
 
-        MSAppLogger.i("file=" + file.length());
+        CMAppLogger.i("file=" + file.length());
     }
 
     /**
@@ -160,7 +160,7 @@ public class LoginApiActivity extends AppCompatActivity {
 
         HttpController.INSTANCE.doGet(url, new TreeMap<String, String>(), new HttpCallback() {
             @Override
-            public void onSuccess(MSBaseResponse response, String json) {
+            public void onSuccess(CMBaseResponse response, String json) {
 
                 try {
                     byte[] data = json.getBytes("utf-8");
@@ -196,7 +196,7 @@ public class LoginApiActivity extends AppCompatActivity {
      */
     public void getVerifyCode(View view) {
 
-        MSAppLogger.i("getVerifyCode");
+        CMAppLogger.i("getVerifyCode");
 
         int seed = new Random().nextInt();
 
@@ -224,7 +224,7 @@ public class LoginApiActivity extends AppCompatActivity {
 
                         mCookie = sb.toString();
 
-                        MSAppLogger.i("cookie=" + mCookie);
+                        CMAppLogger.i("cookie=" + mCookie);
 
                         // 返回数组
                         byte[] data = null;
@@ -274,7 +274,7 @@ public class LoginApiActivity extends AppCompatActivity {
 
         final long begin = System.currentTimeMillis();
 
-        MSAppLogger.i("login");
+        CMAppLogger.i("login");
 
         final String verifyCode = mVerifyCodeEditText.getText().toString();
 
@@ -310,7 +310,7 @@ public class LoginApiActivity extends AppCompatActivity {
                             throw new IllegalArgumentException(errorMsg);
                         }
 
-                        MSAppLogger.i("result=" + result);
+                        CMAppLogger.i("result=" + result);
                         return 0;
                     }
                 })
@@ -328,7 +328,7 @@ public class LoginApiActivity extends AppCompatActivity {
                     @Override
                     public String apply(Response response) throws Exception {
 
-                        MSAppLogger.i("code=" + response.code() + ", location=" + response.header("location"));
+                        CMAppLogger.i("code=" + response.code() + ", location=" + response.header("location"));
 
                         String ticket = "";
 
@@ -356,7 +356,7 @@ public class LoginApiActivity extends AppCompatActivity {
                     @Override
                     public String apply(String ticket) throws Exception {
 
-                        MSAppLogger.i("ticket=" + ticket);
+                        CMAppLogger.i("ticket=" + ticket);
 
                         Response response = getUserInfo(ticket);
 
@@ -367,12 +367,12 @@ public class LoginApiActivity extends AppCompatActivity {
                         if (responseBody != null) {
 
                             json = responseBody.string();
-                            MSAppLogger.i("info=" + json);
+                            CMAppLogger.i("info=" + json);
 
                             mACache.put("dcc", json);
 
                             String cacheString = mACache.getAsString("dcc");
-                            MSAppLogger.i("cacheString=" + cacheString);
+                            CMAppLogger.i("cacheString=" + cacheString);
                         }
 
                         return "";
@@ -396,7 +396,7 @@ public class LoginApiActivity extends AppCompatActivity {
                     @Override
                     public void onComplete() {
 
-                        MSAppLogger.i("duration=" + ((System.currentTimeMillis() - begin) / 1000));
+                        CMAppLogger.i("duration=" + ((System.currentTimeMillis() - begin) / 1000));
                     }
                 });
     }
@@ -440,7 +440,7 @@ public class LoginApiActivity extends AppCompatActivity {
      */
     private Response getLocation(String url) throws IOException {
 
-        MSAppLogger.i("thread=" + Thread.currentThread().getName());
+        CMAppLogger.i("thread=" + Thread.currentThread().getName());
 
         OkHttpClient okHttpClient = new OkHttpClient.Builder().build();
 
@@ -470,7 +470,7 @@ public class LoginApiActivity extends AppCompatActivity {
      */
     private Response getTicket(String url) throws IOException {
 
-        MSAppLogger.i("thread=" + Thread.currentThread().getName());
+        CMAppLogger.i("thread=" + Thread.currentThread().getName());
 
         String service = INTERNET_SERVER_9999 + TICKET;
 
@@ -497,7 +497,7 @@ public class LoginApiActivity extends AppCompatActivity {
      */
     private Response getUserInfo(String ticket) throws IOException {
 
-        MSAppLogger.i("thread=" + Thread.currentThread().getName());
+        CMAppLogger.i("thread=" + Thread.currentThread().getName());
 
         String url = INTERNET_SERVER_9999 + TICKET;
 
@@ -533,10 +533,10 @@ public class LoginApiActivity extends AppCompatActivity {
 
         HttpController.INSTANCE.doPost(url, paramMap, new HttpCallback() {
             @Override
-            public void onSuccess(MSBaseResponse response, String json) {
+            public void onSuccess(CMBaseResponse response, String json) {
 
                 try {
-                    MSAppLogger.i("json=" + AESUtils.decrypt(json.replaceAll("\"", "")));
+                    CMAppLogger.i("json=" + AESUtils.decrypt(json.replaceAll("\"", "")));
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -581,20 +581,20 @@ public class LoginApiActivity extends AppCompatActivity {
         partMap.put("objectType", "2");
 
 
-        List<MSUploadFileInfo> fileList = new ArrayList<>();
-        fileList.add(new MSUploadFileInfo(picturePath, "file"));
+        List<CMUploadFileInfo> fileList = new ArrayList<>();
+        fileList.add(new CMUploadFileInfo(picturePath, "file"));
 
         HttpController.INSTANCE.doUpload(url, partMap, null, fileList, new HttpProgressCallback() {
             @Override
             public void progress(long current, long total, boolean done) {
-                MSAppLogger.i("current=" + current + ", total=" + total);
+                CMAppLogger.i("current=" + current + ", total=" + total);
             }
 
             @Override
-            public void onSuccess(MSBaseResponse response, String json) {
+            public void onSuccess(CMBaseResponse response, String json) {
 
                 try {
-                    MSAppLogger.i("json=" + AESUtils.decrypt(json.replaceAll("\"", "")));
+                    CMAppLogger.i("json=" + AESUtils.decrypt(json.replaceAll("\"", "")));
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

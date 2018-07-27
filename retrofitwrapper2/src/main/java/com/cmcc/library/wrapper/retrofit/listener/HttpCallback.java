@@ -5,7 +5,7 @@ package com.cmcc.library.wrapper.retrofit.listener;
  */
 
 
-import com.cmcc.library.wrapper.retrofit.model.MSBaseResponse;
+import com.cmcc.library.wrapper.retrofit.model.CMBaseResponse;
 
 /**
  * 接口
@@ -17,7 +17,7 @@ public interface HttpCallback {
      * @param response 解析的结构
      * @param json json字符串
      */
-    void onSuccess(MSBaseResponse response, String json);
+    void onSuccess(CMBaseResponse response, String json);
 
     void onException(Throwable e);
 }

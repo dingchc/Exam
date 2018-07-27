@@ -4,9 +4,9 @@ import android.os.Looper;
 import android.os.Message;
 
 
-import com.cmcc.library.wrapper.retrofit.model.MSProgressInfo;
+import com.cmcc.library.wrapper.retrofit.model.CMProgressInfo;
 import com.cmcc.library.wrapper.retrofit.listener.DownloadProgressListener;
-import com.cmcc.library.wrapper.retrofit.util.MSUtil;
+import com.cmcc.library.wrapper.retrofit.util.CMUtil;
 
 import java.io.IOException;
 
@@ -137,7 +137,7 @@ public class DownloadRangeResponseBody extends ResponseBody {
      */
     private void sendProgressMessage(long current, long total) {
 
-        MSProgressInfo progressInfo = new MSProgressInfo(current, total);
+        CMProgressInfo progressInfo = new CMProgressInfo(current, total);
 
         Message msg = Message.obtain();
         msg.what = DownloadHandler.WHAT_UPDATE;
@@ -165,9 +165,9 @@ public class DownloadRangeResponseBody extends ResponseBody {
 
                 if (msg.what == WHAT_UPDATE) {
 
-                    if (MSUtil.checkObjNotNull(msg.obj)) {
+                    if (CMUtil.checkObjNotNull(msg.obj)) {
 
-                        MSProgressInfo progressInfo = (MSProgressInfo) msg.obj;
+                        CMProgressInfo progressInfo = (CMProgressInfo) msg.obj;
 
                         long total = progressInfo.total;
                         long current = progressInfo.current;

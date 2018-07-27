@@ -5,11 +5,11 @@ package com.cmcc.library.wrapper.retrofit.model;
  * Created by ding on 3/9/17.
  */
 
-public class HttpTracker {
+public class CMHttpTracker {
 
     private String url;
 
-    public HttpTracker(String url) {
+    public CMHttpTracker(String url) {
         this.url = url;
     }
 

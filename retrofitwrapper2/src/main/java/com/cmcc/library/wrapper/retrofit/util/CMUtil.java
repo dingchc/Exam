@@ -24,15 +24,12 @@ import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
 /**
+ * 工具类
+ * @author Ding
  * Created by ding on 1/4/17.
  */
 
-public class MSUtil {
-
-    public static DateFormat ymdhmsDateFormat =
-            new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
-    public static DateFormat ymdhmDateFormat =
-            new SimpleDateFormat("yy.MM.dd HH:mm", Locale.getDefault());
+public class CMUtil {
 
 
     /**
@@ -43,7 +40,7 @@ public class MSUtil {
      */
     public static boolean checkObjNotNull(Object obj) {
 
-        return obj == null ? false : true;
+        return obj != null;
     }
 
     /**
@@ -65,7 +62,7 @@ public class MSUtil {
      */
     public static boolean checkListNotEmpty(List dataList) {
 
-        return (checkListNotNull(dataList) && dataList.size() > 0) ? true : false;
+        return checkListNotNull(dataList) && dataList.size() > 0;
     }
 
     /**
@@ -207,7 +204,7 @@ public class MSUtil {
 
         try {
 
-            byte[] dataArray = MSZLibUtil.compress(json.getBytes("utf-8"));
+            byte[] dataArray = CMZLibUtil.compress(json.getBytes("utf-8"));
 
             fos = new FileOutputStream(new File(path));
 
@@ -243,11 +240,11 @@ public class MSUtil {
         try {
             byte[] data = readBytesFromFile(inputFilePath);
 
-            byte[] unzipDataArray = MSZLibUtil.decompress(data);
+            byte[] unzipDataArray = CMZLibUtil.decompress(data);
 
-            String fileName = MSUtil.getFileName(inputFilePath);
+            String fileName = CMUtil.getFileName(inputFilePath);
 
-            outputPath = MSDirUtil.getValidPath(MSDirUtil.getUnZipDir(), fileName);
+            outputPath = CMDirUtil.getValidPath(CMDirUtil.getUnZipDir(), fileName);
 
             fos = new FileOutputStream(new File(outputPath));
 
@@ -339,23 +336,6 @@ public class MSUtil {
         return Build.MANUFACTURER + ", " + Build.MODEL + ", " + Build.VERSION.RELEASE;
     }
 
-    // 根据指定格式返回相应的日期字符串
-    public static String getSpecialFromData(DateFormat dataformat, Date date) {
-
-        return dataformat.format(date);
-    }
-
-    public static String getFormatTime(int time) {
-        SimpleDateFormat sdf = new SimpleDateFormat("mm:ss:SSS");
-
-        return sdf.format(Math.abs(time));
-    }
-
-    public static String getFormatNumber(int time) {
-        DecimalFormat format = new DecimalFormat("000");
-        return format.format(time);
-    }
-
     /**
      * 日期转时间
      *
@@ -373,27 +353,6 @@ public class MSUtil {
         }
 
         return dateString;
-    }
-
-    private final static ThreadLocal<SimpleDateFormat> dateFormater = new ThreadLocal<SimpleDateFormat>() {
-        @Override
-        protected SimpleDateFormat initialValue() {
-            return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        }
-    };
-
-    /**
-     * 将字符串转位日期类型
-     *
-     * @param sdate
-     * @return
-     */
-    public static Date stringToDate(String sdate) {
-        try {
-            return dateFormater.get().parse(sdate);
-        } catch (ParseException e) {
-            return null;
-        }
     }
 
     /**
@@ -476,7 +435,6 @@ public class MSUtil {
             }
         }
 
-        //        MSAppLogger.i(MSAppLogger.TAG, "ret=" + ret);
         return ret;
     }
 
@@ -551,27 +509,16 @@ public class MSUtil {
 
     /**
      * 检查密码强弱性
+     * @param str 输入
+     * @return true 正确、false 错误
      */
     public static boolean checkPwdStrong(String str) {
-        boolean ret = false;
+
         String regex = "^[a-zA-Z0-9]{6,16}";
         if (Pattern.compile(regex).matcher(str).matches()) {
-            ret = true;
-            return ret;
+            return true;
         }
-        return ret;
-    }
-
-    public static long convertToPhoneNum(String num) {
-        long phonenum = 0;
-        String regex = "^[1][3-8]+\\d{9}";
-        try {
-            if (num.matches(regex))
-                phonenum = Long.parseLong(num);
-        } catch (Exception e) {
-            MSAppLogger.e("error phone num");
-        }
-        return phonenum;
+        return false;
     }
 
     /**
@@ -585,35 +532,6 @@ public class MSUtil {
         } catch (PackageManager.NameNotFoundException e) {
         }
         return verName;
-    }
-
-    /**
-     * 判断是否同一天
-     *
-     * @param date1
-     * @param date2
-     * @return
-     */
-    public static boolean isSameDate(Date date1, Date date2) {
-        Calendar cal1 = Calendar.getInstance();
-        cal1.setTime(date1);
-
-        Calendar cal2 = Calendar.getInstance();
-        cal2.setTime(date2);
-
-        boolean isSameYear = cal1.get(Calendar.YEAR) == cal2.get(Calendar.YEAR);
-        boolean isSameMonth = isSameYear && cal1.get(Calendar.MONTH) == cal2.get(Calendar.MONTH);
-        boolean isSameDate = isSameMonth && cal1.get(Calendar.DAY_OF_MONTH) == cal2.get(Calendar.DAY_OF_MONTH);
-
-        return isSameDate;
-    }
-
-    public static String stringFilter(String str) throws PatternSyntaxException {
-//        String regEx = "[/\\:*?<>|\"\n\t]";
-        String regEx = "[\n\t]";
-        Pattern p = Pattern.compile(regEx);
-        Matcher m = p.matcher(str);
-        return m.replaceAll("");
     }
 
     /**
@@ -633,7 +551,7 @@ public class MSUtil {
     public static void deleteAFile(String path) {
 
         try {
-            MSAppLogger.i("dcc", "Path=" + path);
+            CMAppLogger.i("dcc", "Path=" + path);
             File file = new File(path);
             if (file.isFile() && file.exists()) {
                 file.delete();
@@ -652,7 +570,7 @@ public class MSUtil {
      */
     public static long getRangeStartSize(String contentRange) {
 
-        MSAppLogger.i("getRangeStartSize");
+        CMAppLogger.i("getRangeStartSize");
 
         long rangeStart = 0;
 
@@ -663,13 +581,10 @@ public class MSUtil {
                 int start = contentRange.indexOf(" ");
                 int end = contentRange.indexOf("-");
 
-//                MSAppLogger.i("start="+start + ", end=" + end);
-
                 if (start > 0 && end > 0) {
                     String rangeStartString = contentRange.substring(start + 1, end);
                     rangeStart = parseLong(rangeStartString);
 
-//                    MSAppLogger.i("rangeStartString="+rangeStartString+", rangeStart="+rangeStart);
                 }
             }
         } catch (Exception e) {

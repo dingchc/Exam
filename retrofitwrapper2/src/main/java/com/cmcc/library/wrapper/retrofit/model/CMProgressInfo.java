@@ -1,14 +1,15 @@
 package com.cmcc.library.wrapper.retrofit.model;
 
 /**
+ * @author Ding
  * 进度类
  */
-public class MSProgressInfo {
+public class CMProgressInfo {
 
     public long current;
     public long total;
 
-    public MSProgressInfo(long current, long total) {
+    public CMProgressInfo(long current, long total) {
 
         this.current = current;
         this.total = total;
