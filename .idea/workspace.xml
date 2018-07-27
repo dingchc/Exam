@@ -9,7 +9,106 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfcbc7ba-5c12-4bfb-84b9-abdb12f3f8db" name="Default" comment="" />
+    <list default="true" id="bfcbc7ba-5c12-4bfb-84b9-abdb12f3f8db" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/aspirecn/exam/AndroidTest04.java" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/cmcc/exam/AndroidTest04.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/aspirecn/exam/AndroidTest05.java" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/cmcc/exam/AndroidTest05.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/aspirecn/exam/ExampleInstrumentedTest.java" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/cmcc/exam/ExampleInstrumentedTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/AppLogger.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/AppLogger.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/BluetoothUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/BluetoothUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/CoordinatorActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/CoordinatorActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/ExecutorActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/ExecutorActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/Line2TextView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/Line2TextView.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/LoginActivity.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/LoginActivity.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/MainActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/MsApplication.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/MsApplication.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/MsThreadFactoryBuilder.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/MsThreadFactoryBuilder.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/MyUser.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/MyUser.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/Unit1.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/Unit1.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/Unit2.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/Unit2.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/Unit3.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/Unit3.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/ble/BleUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/ble/BleUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/ble/EplusBleTest.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/ble/EplusBleTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/ble/F.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/ble/F.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/ble/SportSdk.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/ble/SportSdk.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/databinding/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/databinding/LoginActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/databinding/MemberActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/databinding/MemberActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/databinding/MembersAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/databinding/MembersAdapter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/databinding/Utils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/databinding/Utils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/db/AppDatabase.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/db/AppDatabase.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/db/dao/ClassDao.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/db/dao/ClassDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/db/dao/UserDao.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/db/dao/UserDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/db/entry/ClassEntry.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/db/entry/ClassEntry.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/db/entry/UserEntry.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/db/entry/UserEntry.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/eduand/LoginApiActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/eduand/LoginApiActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/executors/MyExecutor.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/executors/MyExecutor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/kotlin/SynTax.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/kotlin/SynTax.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/load/ImageLoad.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/load/ImageLoad.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/load/ImageLoader.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/load/ImageLoader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/mvp/BaseMvpActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/mvp/BaseMvpActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/mvp/BasePresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/mvp/BasePresenter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/mvp/BaseView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/mvp/BaseView.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/mvp/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/mvp/LoginActivity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/mvp/LoginPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/mvp/LoginPresenter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/mvp/LoginView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/mvp/LoginView.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/mvp/MiniBer.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/mvp/MiniBer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/net/MyByteBuffer.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/net/MyByteBuffer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/net/MySocketClient.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/net/MySocketClient.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/net/MySocketServer.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/net/MySocketServer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/net/ProtocolUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/net/ProtocolUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/net/TcpClient.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/net/TcpClient.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/utils/ACache.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/utils/ACache.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/utils/AESUtils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/utils/AESUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/utils/Base64.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/utils/Base64.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/utils/ParamsUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/utils/ParamsUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/widget/CustomDrawable.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/widget/CustomDrawable.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/widget/CustomView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/widget/CustomView.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/widget/MsButton.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/widget/MsButton.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/widget/MsRippleButton.kt" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/widget/MsRippleButton.kt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/widget/MsToolbar.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/widget/MsToolbar.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/test/java/com/aspirecn/exam/ExampleUnitTest.java" afterPath="$PROJECT_DIR$/app/src/test/java/com/cmcc/exam/ExampleUnitTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/HttpController.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/HttpController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/MSStaticWrapper.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/MSStaticWrapper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/DownloadInterceptor.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadInterceptor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/DownloadRangeImpl.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/DownloadRangeInterceptor.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeInterceptor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/DownloadRangeResponseBody.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeResponseBody.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/DownloadResponseBody.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadResponseBody.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/HttpClientHelper.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpClientHelper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/HttpService.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/HttpsClientHelper.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpsClientHelper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/HttpsFactory.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpsFactory.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/MSHttpException.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/MSHttpException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/RetrofitClient.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/RetrofitClient.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/UploadInterceptor.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/UploadInterceptor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/UploadRequestBody.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/UploadRequestBody.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/listener/DownloadProgressListener.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/DownloadProgressListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/listener/HttpCallback.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/HttpCallback.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/listener/HttpProgressCallback.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/HttpProgressCallback.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/listener/UploadProgressListener.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/UploadProgressListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/model/HttpResponse.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/HttpResponse.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/model/HttpTracker.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/HttpTracker.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/model/MSBaseResponse.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/MSBaseResponse.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/model/MSProgressInfo.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/MSProgressInfo.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/model/MSResponse.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/MSResponse.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/model/MSUploadFileInfo.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/MSUploadFileInfo.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/util/MSAppLogger.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/util/MSAppLogger.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/util/MSDirUtil.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/util/MSDirUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/util/MSMultiPartUtil.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/util/MSMultiPartUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/util/MSUtil.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/util/MSUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/util/MSZLibUtil.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/util/MSZLibUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/login_activity.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/login_activity.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/toolbar.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/toolbar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/retrofitwrapper2/build.gradle" afterPath="$PROJECT_DIR$/retrofitwrapper2/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/AndroidManifest.xml" />
+    </list>
     <ignored path="Exam.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,92 +140,117 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HttpsClientHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/HttpsClientHelper.java">
+      <file leaf-file-name="HttpsFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpsFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            <state relative-caret-position="95">
+              <caret line="80" column="49" lean-forward="false" selection-start-line="80" selection-start-column="49" selection-end-line="80" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/HttpController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="804" column="26" lean-forward="true" selection-start-line="804" selection-start-column="26" selection-end-line="804" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="HttpService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/HttpService.java">
+        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
+            <state relative-caret-position="284">
               <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpsFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/HttpsFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MSHttpException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/MSHttpException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UploadInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/UploadInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RetrofitClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/RetrofitClient.java">
+        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/RetrofitClient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding />
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#772#773#0" expanded="false" />
+                <element signature="e#815#816#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="UploadRequestBody.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/UploadRequestBody.java">
+        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/UploadRequestBody.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1138#1139#0" expanded="false" />
+                <element signature="e#1186#1187#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExampleUnitTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/test/java/com/cmcc/exam/ExampleUnitTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="65">
+              <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+              <folding>
+                <element signature="e#878#879#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DownloadInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExampleUnitTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/test/java/com/aspirecn/exam/ExampleUnitTest.java">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state relative-caret-position="390">
+              <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="68" lean-forward="false" selection-start-line="0" selection-start-column="68" selection-end-line="0" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="HttpClientHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/HttpClientHelper.java">
+        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpClientHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -184,6 +308,9 @@
     <dirStrings>
       <dir>$PROJECT_DIR$/../../eplus/app</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -2995,16 +3122,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/databinding/Utils.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/MyApplication.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/db/User.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/db/ClassEntry.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/db/UserDao.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/db/ClassDao.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/db/entry/User.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/db/entry/UserEntry.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/db/AppDatabase.java" />
-        <option value="$PROJECT_DIR$/retrofitwrapper2/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/db/entry/ClassEntry.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/db/dao/ClassDao.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/db/dao/UserDao.java" />
@@ -3046,6 +3169,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/eduand/LoginApiActivity.java" />
         <option value="$PROJECT_DIR$/app/src/androidTest/java/com/aspirecn/exam/ExampleInstrumentedTest.java" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/aspirecn/exam/ExampleUnitTest.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/build.gradle" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/HttpsFactory.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/HttpController.java" />
       </list>
     </option>
   </component>
@@ -3054,6 +3181,7 @@
     <option name="width" value="1280" />
     <option name="height" value="729" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="AndroidView" proportions="" version="1">
       <flattenPackages />
@@ -3069,6 +3197,20 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -3151,9 +3293,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exam" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Exam" />
@@ -3178,26 +3329,67 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="retrofit" />
+              <option name="myItemId" value="cmcc" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="retrofit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Exam" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="retrofitwrapper2" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmcc" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="retrofit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="listener" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exam" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="retrofitwrapper2" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidManifestsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exam" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -3247,7 +3439,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android JUnit.ExampleUnitTest">
+  <component name="RunManager" selected="Android App.app">
     <configuration default="false" name="AndroidTest04" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <option name="TESTING_TYPE" value="2" />
@@ -3293,7 +3485,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532574707921" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532673933589" />
       </method>
     </configuration>
     <configuration default="false" name="AndroidTest05" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
@@ -3341,7 +3533,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532574707921" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532673933590" />
       </method>
     </configuration>
     <configuration default="false" name="ExampleInstrumentedT..." type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
@@ -3389,17 +3581,17 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532574707921" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532673933590" />
       </method>
     </configuration>
     <configuration default="false" name="MySocketServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.aspirecn.exam.net.*" />
+          <option name="PATTERN" value="com.cmcc.exam.net.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.aspirecn.exam.net.MySocketServer" />
+      <option name="MAIN_CLASS_NAME" value="com.cmcc.exam.net.MySocketServer" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -3415,15 +3607,15 @@
     <configuration default="false" name="ExampleUnitTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.aspirecn.exam.*" />
+          <option name="PATTERN" value="com.cmcc.exam.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="app" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.aspirecn.exam" />
-      <option name="MAIN_CLASS_NAME" value="com.aspirecn.exam.ExampleUnitTest" />
+      <option name="PACKAGE_NAME" value="com.cmcc.exam" />
+      <option name="MAIN_CLASS_NAME" value="com.cmcc.exam.ExampleUnitTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -3508,7 +3700,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532574707922" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532673933590" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3556,7 +3748,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532574707922" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532673933590" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3588,6 +3780,27 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
@@ -3718,7 +3931,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532574707923" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532673933591" />
       </method>
     </configuration>
     <list size="6">
@@ -3807,31 +4020,34 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="729" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.5281532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5281532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37387386" sideWeight="0.50852877" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45886075" sideWeight="0.4914712" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39977476" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.4914712" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37387386" sideWeight="0.50852877" order="14" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35443038" sideWeight="0.49573562" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.4978678" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45886075" sideWeight="0.4914712" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40306947" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3449367" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39977476" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -3839,10 +4055,8 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.4914712" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3449367" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android WiFi ADB" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -3910,20 +4124,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.0.1/194434fed571c2038f2d78baad1acd0d86394c3b/rxjava-2.0.1-sources.jar!/io/reactivex/functions/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.0.1/194434fed571c2038f2d78baad1acd0d86394c3b/rxjava-2.0.1-sources.jar!/io/reactivex/functions/BiConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.0.1/194434fed571c2038f2d78baad1acd0d86394c3b/rxjava-2.0.1-sources.jar!/io/reactivex/functions/BiFunction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -4064,7 +4264,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/MyUser.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/MyUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="55">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
@@ -4088,42 +4288,42 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/huawei-ldn_al10-V3HBB18523505053/data/data/com.aspirecn.exam/cache/ACache/99268" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/eduand/LoginApiActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/eduand/LoginApiActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4770">
           <caret line="367" column="0" lean-forward="false" selection-start-line="367" selection-start-column="0" selection-end-line="367" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/model/MSUploadFileInfo.java">
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/MSUploadFileInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/utils/AESUtils.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/utils/AESUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="37" column="15" lean-forward="false" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/utils/Base64.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/utils/Base64.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/utils/ParamsUtil.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/utils/ParamsUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/utils/ACache.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/utils/ACache.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1560">
           <caret line="156" column="28" lean-forward="false" selection-start-line="156" selection-start-column="28" selection-end-line="156" selection-end-column="28" />
@@ -4147,49 +4347,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/HttpController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="792" column="0" lean-forward="true" selection-start-line="792" selection-start-column="0" selection-end-line="792" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/DownloadInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/DownloadRangeImpl.java">
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/DownloadRangeInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/DownloadRangeResponseBody.java">
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeResponseBody.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/DownloadResponseBody.java">
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadResponseBody.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/aspirecn/exam/ExampleInstrumentedTest.java">
+    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/cmcc/exam/ExampleInstrumentedTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
@@ -4203,7 +4389,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/HttpsClientHelper.java">
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpsClientHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
@@ -4211,23 +4397,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/HttpService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/HttpsFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/MSHttpException.java">
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/MSHttpException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
@@ -4235,42 +4405,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/UploadInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/UploadInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#504#505#0" expanded="false" />
+            <element signature="e#544#545#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/RetrofitClient.java">
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/RetrofitClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#772#773#0" expanded="false" />
+            <element signature="e#815#816#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/UploadRequestBody.java">
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/UploadRequestBody.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1138#1139#0" expanded="false" />
+            <element signature="e#1186#1187#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/HttpClientHelper.java">
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpClientHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/cmcc/exam/ExampleUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding>
+            <element signature="e#878#879#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/aspirecn/exam/ExampleUnitTest.java">
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state relative-caret-position="390">
+          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="43" column="29" lean-forward="false" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpsFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="80" column="49" lean-forward="false" selection-start-line="80" selection-start-column="49" selection-end-line="80" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/HttpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="804" column="26" lean-forward="true" selection-start-line="804" selection-start-column="26" selection-end-line="804" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="68" lean-forward="false" selection-start-line="0" selection-start-column="68" selection-end-line="0" selection-end-column="68" />
           <folding />
         </state>
       </provider>

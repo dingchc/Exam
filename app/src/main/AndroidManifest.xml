@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.aspirecn.exam">
+    package="com.cmcc.exam">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -20,7 +20,7 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
-        android:name=".MsApplication"
+        android:name="com.cmcc.exam.MsApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -28,46 +28,46 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.cmcc.exam.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
         <activity
-            android:name=".CoordinatorActivity"
+            android:name="com.cmcc.exam.CoordinatorActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".databinding.LoginActivity">
+        <activity android:name="com.cmcc.exam.databinding.LoginActivity">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".databinding.MemberActivity">
+        <activity android:name="com.cmcc.exam.databinding.MemberActivity">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ExecutorActivity">
+        <activity android:name="com.cmcc.exam.ExecutorActivity">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".mvp.LoginActivity">
+        <activity android:name="com.cmcc.exam.mvp.LoginActivity">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name="com.cmcc.exam.LoginActivity"
             android:label="@string/title_activity_login">
 
         </activity>
 
         <activity
-            android:name=".eduand.LoginApiActivity"
+            android:name="com.cmcc.exam.eduand.LoginApiActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

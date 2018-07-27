@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.aspirecn.exam.MainActivity"
+    tools:context="com.cmcc.exam.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <include layout="@layout/layout" />
@@ -27,7 +27,7 @@
             android:scaleType="fitXY"
             android:src="@mipmap/img_star_market" />
 
-        <com.aspirecn.exam.Line2TextView
+        <com.cmcc.exam.Line2TextView
             android:id="@+id/line2TextView"
             android:layout_width="0dp"
             android:layout_height="115dp"
@@ -45,7 +45,7 @@
             app:ms_line_space="10dp" />
     </LinearLayout>
 
-    <com.aspirecn.exam.widget.MsButton
+    <com.cmcc.exam.widget.MsButton
         android:layout_width="match_parent"
         android:layout_height="44dp"
         android:layout_marginStart="@dimen/fab_margin"

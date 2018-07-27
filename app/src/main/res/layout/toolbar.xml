@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         app:layout_scrollFlags="scroll|snap">
 
-        <com.aspirecn.exam.widget.MsToolbar
+        <com.cmcc.exam.widget.MsToolbar
             android:id="@+id/ms_toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
@@ -31,7 +31,7 @@
             </RelativeLayout>
 
 
-        </com.aspirecn.exam.widget.MsToolbar>
+        </com.cmcc.exam.widget.MsToolbar>
 
     </android.support.design.widget.CollapsingToolbarLayout>
 

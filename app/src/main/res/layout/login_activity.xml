@@ -6,7 +6,7 @@
     <data>
         <variable
             name="user"
-            type="com.aspirecn.exam.MyUser" />
+            type="com.cmcc.exam.MyUser" />
     </data>
 
     <LinearLayout
