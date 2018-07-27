@@ -13,19 +13,52 @@ import com.cmcc.library.wrapper.retrofit.util.CMUtil;
 
 /**
  * 断点下载辅助类
+ *
  * @author Ding
- * Created by ding on 4/20/17.
+ *         Created by ding on 4/20/17.
  */
 
 public class DownloadRangeImpl implements DownloadProgressListener {
 
+    /**
+     * 更新进度的最小间隔时间
+     */
+    private final static int INTERVAL_TIME_MILLIS = 200;
+
+    /**
+     * 回调
+     */
     private HttpProgressCallback callback;
-    private boolean isSupportRange; //是否支持断点续传
-    private String destPath; //存储的文件名
-    private String tempPath; //临时文件名
-    private long downloadSize = 0; //已下载的大小
+
+    /**
+     * 是否支持断点续传
+     */
+    private boolean isSupportRange;
+
+    /**
+     * 存储的文件名
+     */
+    private String destPath;
+
+    /**
+     * 临时文件名
+     */
+    private String tempPath;
+
+    /**
+     * 已下载的大小
+     */
+    private long downloadSize = 0;
+
+    /**
+     * handler
+     */
     private DownloadHandler downloadHandler;
-    private long lastNotifyTime; // 上次通知回调的时间
+
+    /**
+     * 上次通知回调的时间
+     */
+    private long lastNotifyTime;
 
     public DownloadRangeImpl(String url, HttpProgressCallback callback) {
         this.callback = callback;
@@ -79,15 +112,14 @@ public class DownloadRangeImpl implements DownloadProgressListener {
     @Override
     public void progress(long current, long total, boolean done) {
 
-//        MSAppLogger.i("current=" + current + ", total=" + total);
-
         notifyCallbackDelay(current, total);
     }
 
     /**
      * 通知回调
+     *
      * @param current 当前
-     * @param total 全部
+     * @param total   全部
      */
     private void notifyCallbackDelay(long current, long total) {
 
@@ -95,7 +127,7 @@ public class DownloadRangeImpl implements DownloadProgressListener {
 
         long duration = currentTime - lastNotifyTime;
 
-        if (lastNotifyTime <= 0 || duration >= 200 || current == total) {
+        if (lastNotifyTime <= 0 || duration >= INTERVAL_TIME_MILLIS || current == total) {
 
             if (CMUtil.checkObjNotNull(callback)) {
                 callback.progress(current, total, current == total);
@@ -118,7 +150,7 @@ public class DownloadRangeImpl implements DownloadProgressListener {
      *
      * @param supportRange 是、否
      */
-    public synchronized void setSupportRange(boolean supportRange) {
+    synchronized void setSupportRange(boolean supportRange) {
         isSupportRange = supportRange;
     }
 
@@ -133,7 +165,8 @@ public class DownloadRangeImpl implements DownloadProgressListener {
 
     /**
      * 获取临时文件地址
-     * @return
+     *
+     * @return 路径
      */
     public String getTempPath() {
         return tempPath;
@@ -141,24 +174,27 @@ public class DownloadRangeImpl implements DownloadProgressListener {
 
     /**
      * 已下载的大小
+     *
      * @return 下载的大小
      */
-    public long getDownloadSize() {
+    long getDownloadSize() {
         return downloadSize;
     }
 
     /**
      * 设置已下载的大小
+     *
      * @param downloadSize 文件大小
      */
-    public void setDownloadSize(long downloadSize) {
+    void setDownloadSize(long downloadSize) {
         this.downloadSize = downloadSize;
     }
 
     /**
      * 发送进度更新消息
+     *
      * @param current 当前下载量
-     * @param total 总量
+     * @param total   总量
      */
     public void sendProgressMessage(long current, long total) {
 
@@ -176,9 +212,9 @@ public class DownloadRangeImpl implements DownloadProgressListener {
      */
     class DownloadHandler extends android.os.Handler {
 
-        public static final int WHAT_UPDATE = 0;
+        static final int WHAT_UPDATE = 0;
 
-        public DownloadHandler(Looper looper) {
+        DownloadHandler(Looper looper) {
 
             super(looper);
         }

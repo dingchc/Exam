@@ -17,14 +17,16 @@ import okhttp3.Response;
 
 /**
  * 支持断点下载的拦截器
- * Created by ding on 2017/4/10.
+ *
+ * @author Ding
+ *         Created by ding on 2017/4/10.
  */
 
 public class DownloadRangeInterceptor implements Interceptor {
 
     protected DownloadProgressListener listener;
 
-    public DownloadRangeInterceptor(DownloadProgressListener listener) {
+    DownloadRangeInterceptor(DownloadProgressListener listener) {
         this.listener = listener;
     }
 
@@ -49,18 +51,16 @@ public class DownloadRangeInterceptor implements Interceptor {
         // 设置需要断点续传，及上次下次下载的Size
         if (isSupportRange && downloadSize > 0) {
 
-            CMAppLogger.i("downloadSize="+downloadSize);
+            CMAppLogger.i("downloadSize=" + downloadSize);
 
-            if (CMUtil.checkObjNotNull(response)) {
-                response.close();
-            }
+            // 关闭当前请求
+            response.close();
+
+            // 重新构建一个响应
             response = chain.proceed(originRequest.newBuilder().addHeader("RANGE", "bytes=" + downloadSize + "-").build());
         }
 
         headers = response.headers();
-//        printHeader(headers);
-
-        CMAppLogger.i("isSupportRange="+isSupportRange + ", content-range=" + headers.get("Content-Range"));
 
         // 经过测试发现，即使服务器返回头包含"Accept-Ranges"字段，服务器也未必支持断点下载
         // 友好的方式是判断Content-Range字段中，返回内容的开始位置是不是跟请求的downloadSize大小一致
@@ -87,14 +87,15 @@ public class DownloadRangeInterceptor implements Interceptor {
 
     /**
      * 获取已下载的文件大小
-     * @return
+     *
+     * @return 大小
      */
     private long getDownloadedSize() {
 
         long downloadSize = 0;
 
         if (CMUtil.checkObjNotNull(listener) && listener instanceof DownloadRangeImpl) {
-            DownloadRangeImpl downloadImpl = (DownloadRangeImpl)listener;
+            DownloadRangeImpl downloadImpl = (DownloadRangeImpl) listener;
 
             String filePath = downloadImpl.getTempPath();
 
@@ -111,13 +112,14 @@ public class DownloadRangeInterceptor implements Interceptor {
 
     /**
      * 打印header
+     *
      * @param headers 头
      */
     private void printHeader(Headers headers) {
         if (CMUtil.checkObjNotNull(headers)) {
 
             for (String key : headers.names()) {
-                CMAppLogger.i("key="+key+", value="+headers.get(key));
+                CMAppLogger.i("key=" + key + ", value=" + headers.get(key));
             }
         }
     }

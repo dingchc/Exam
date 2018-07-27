@@ -20,6 +20,7 @@ import okio.Source;
 
 /**
  * 支持断点下载的ResponseBody
+ * @author Ding
  * Created by ding on 2017/4/10.
  */
 
@@ -30,7 +31,7 @@ public class DownloadRangeResponseBody extends ResponseBody {
     private BufferedSource bufferedSource;
     private DownloadHandler downloadHandler;
 
-    public DownloadRangeResponseBody(ResponseBody responseBody, DownloadProgressListener listener, boolean isSupportRange) {
+    DownloadRangeResponseBody(ResponseBody responseBody, DownloadProgressListener listener, boolean isSupportRange) {
         this.responseBody = responseBody;
         this.listener = listener;
 
@@ -67,7 +68,6 @@ public class DownloadRangeResponseBody extends ResponseBody {
 
             long current = 0L;
             long total = 0L;
-            long lastNotifyTime = 0;
 
             @Override
             public long read(Buffer sink, long byteCount) throws IOException {
@@ -81,9 +81,6 @@ public class DownloadRangeResponseBody extends ResponseBody {
                     }
 
                     current += byteRead != -1 ? byteRead : 0;
-
-                    // 暂时不用了，因为这个是网络读取数据的百分比，UI显示的实际需要写入文件的百分比，不一样的
-                    // notifyCallback(lastNotifyTime, current, total);
                 }
 
                 return byteRead;
@@ -91,43 +88,6 @@ public class DownloadRangeResponseBody extends ResponseBody {
         };
     }
 
-    /**
-     * 通知回调
-     * @param lastNotifyTime 上次通知时间
-     * @param current 当前
-     * @param total 全部
-     */
-    private void notifyCallback(long lastNotifyTime, long current, long total) {
-
-        long currentTime = System.currentTimeMillis();
-
-        long duration = currentTime - lastNotifyTime;
-
-        if (lastNotifyTime <= 0 || duration >= 2000 || current == total) {
-
-
-            // 设置下载完成
-            if (listener instanceof DownloadRangeImpl) {
-
-                DownloadRangeImpl downloadRangeImpl = ((DownloadRangeImpl) listener);
-
-//                if (current == total) {
-//                    downloadRangeImpl.setDownloadFinished(true);
-//                }
-
-                current += downloadRangeImpl.getDownloadSize();
-                total += downloadRangeImpl.getDownloadSize();
-            }
-
-//                        MSAppLogger.i("percent=" + (current*1.0f/total*1.0f));
-
-            sendProgressMessage(current, total);
-
-//                        listener.progress(current, total, current == total);
-
-            lastNotifyTime = currentTime;
-        }
-    }
 
     /**
      * 发送进度更新消息
@@ -151,9 +111,9 @@ public class DownloadRangeResponseBody extends ResponseBody {
      */
     class DownloadHandler extends android.os.Handler {
 
-        public static final int WHAT_UPDATE = 0;
+        static final int WHAT_UPDATE = 0;
 
-        public DownloadHandler(Looper looper) {
+        DownloadHandler(Looper looper) {
 
             super(looper);
         }
