@@ -23,7 +23,7 @@ import io.reactivex.Observable;
  * @author Ding
  */
 
-public interface HttpService {
+public interface CMHttpService {
 
     /**
      * Get请求

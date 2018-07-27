@@ -5,7 +5,7 @@ import android.os.Message;
 
 
 import com.cmcc.library.wrapper.retrofit.model.CMProgressInfo;
-import com.cmcc.library.wrapper.retrofit.listener.DownloadProgressListener;
+import com.cmcc.library.wrapper.retrofit.listener.CMDownloadProgressListener;
 import com.cmcc.library.wrapper.retrofit.util.CMUtil;
 
 import java.io.IOException;
@@ -24,19 +24,19 @@ import okio.Source;
  * Created by ding on 2017/4/10.
  */
 
-public class DownloadRangeResponseBody extends ResponseBody {
+public class CMDownloadRangeResponseBody extends ResponseBody {
 
     private ResponseBody responseBody;
-    private DownloadProgressListener listener;
+    private CMDownloadProgressListener listener;
     private BufferedSource bufferedSource;
     private DownloadHandler downloadHandler;
 
-    DownloadRangeResponseBody(ResponseBody responseBody, DownloadProgressListener listener, boolean isSupportRange) {
+    CMDownloadRangeResponseBody(ResponseBody responseBody, CMDownloadProgressListener listener, boolean isSupportRange) {
         this.responseBody = responseBody;
         this.listener = listener;
 
-        if (listener instanceof DownloadRangeImpl) {
-            DownloadRangeImpl download = (DownloadRangeImpl) listener;
+        if (listener instanceof CMDownloadRangeImpl) {
+            CMDownloadRangeImpl download = (CMDownloadRangeImpl) listener;
             download.setSupportRange(isSupportRange);
         }
 

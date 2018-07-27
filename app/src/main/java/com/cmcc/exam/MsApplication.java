@@ -4,7 +4,7 @@ import android.app.Application;
 import android.arch.persistence.room.Room;
 
 import com.cmcc.exam.db.AppDatabase;
-import com.cmcc.library.wrapper.retrofit.HttpController;
+import com.cmcc.library.wrapper.retrofit.CMHttpController;
 
 /**
  * Created by ding on 10/24/17.
@@ -22,7 +22,7 @@ public class MsApplication extends Application {
 
         app = this;
 
-        HttpController.INSTANCE.setAppContext(this);
+        CMHttpController.INSTANCE.setAppContext(this);
 
         // .addMigrations(AppDatabase.migrations)
         db = Room.databaseBuilder(this, AppDatabase.class, "app_db").fallbackToDestructiveMigration().build();

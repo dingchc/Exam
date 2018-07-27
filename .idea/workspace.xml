@@ -10,11 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfcbc7ba-5c12-4bfb-84b9-abdb12f3f8db" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/CMDownloadProgressListener.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/DownloadProgressListener.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/HttpController.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/CMHttpController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeImpl.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMDownloadRangeImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeInterceptor.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMDownloadRangeInterceptor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeResponseBody.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMDownloadRangeResponseBody.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpClientHelper.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMHttpClientHelper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpService.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMHttpService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/RetrofitClient.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMRetrofitClient.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/UploadInterceptor.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMUploadInterceptor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/UploadRequestBody.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMUploadRequestBody.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/HttpCallback.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/CMHttpCallback.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/HttpProgressCallback.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/CMHttpProgressCallback.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/UploadProgressListener.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/CMUploadProgressListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeImpl.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeInterceptor.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeInterceptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeResponseBody.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeResponseBody.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpService.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/MsApplication.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/MsApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/eduand/LoginApiActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/eduand/LoginApiActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/CMStaticWrapper.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/CMStaticWrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/CMHttpTracker.java" afterPath="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/CMHttpTracker.java" />
     </list>
     <ignored path="Exam.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,105 +62,107 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CMHttpException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMHttpException.java">
+      <file leaf-file-name="CMDownloadProgressListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/CMDownloadProgressListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="16" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpService.java">
+      <file leaf-file-name="CMDownloadRangeInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMDownloadRangeInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="161">
+              <caret line="26" column="14" lean-forward="false" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DownloadRangeImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeImpl.java">
+      <file leaf-file-name="CMDownloadRangeImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMDownloadRangeImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
+            <state relative-caret-position="8">
               <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMHttpCallback.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/CMHttpCallback.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMHttpProgressCallback.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/CMHttpProgressCallback.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMUploadProgressListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/CMUploadProgressListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMStaticWrapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/CMStaticWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMHttpController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/CMHttpController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="58" column="37" lean-forward="true" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMHttpTracker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/CMHttpTracker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
-                <element signature="e#3278#3279#0" expanded="true" />
-                <element signature="e#3323#3324#0" expanded="true" />
+                <element signature="e#277#278#0" expanded="true" />
+                <element signature="e#303#304#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DownloadRangeInterceptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1388">
-              <caret line="117" column="17" lean-forward="false" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DownloadRangeResponseBody.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeResponseBody.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="97" column="17" lean-forward="false" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginApiActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginApiActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/eduand/LoginApiActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpClientHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpClientHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gradle.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.gradle/gradle.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/retrofitwrapper2/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="-1360">
+              <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -3017,23 +3034,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/widget/CustomDrawable.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/widget/MsToolbar.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_coordinator.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/CoordinatorActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/toolbar.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/eduand/LoginApi.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/MsApplication.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/HttpService.java" />
-        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/util/MSAppLogger.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/Util.java" />
-        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/HttpController.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/utils/ACache.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/utils/ParamsUtil.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/utils/AESUtils.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/aspirecn/exam/utils/Base64.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_edu_api_login.xml" />
@@ -3042,9 +3042,7 @@
         <option value="$PROJECT_DIR$/app/src/test/java/com/aspirecn/exam/ExampleUnitTest.java" />
         <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/aspirecn/library/wrapper/retrofit/core/HttpsFactory.java" />
-        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/HttpController.java" />
         <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/MSStaticWrapper.java" />
-        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/CMStaticWrapper.java" />
         <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/util/CMZLibUtil.java" />
         <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/util/CMAppLogger.java" />
         <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/util/CMDirUtil.java" />
@@ -3054,7 +3052,6 @@
         <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/MSProgressInfo.java" />
         <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/MSResponse.java" />
         <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/HttpResponse.java" />
-        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/CMHttpTracker.java" />
         <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/CMBaseResponse.java" />
         <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/CMProgressInfo.java" />
         <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/CMResponse.java" />
@@ -3068,6 +3065,26 @@
         <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeResponseBody.java" />
         <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpClientHelper.java" />
         <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpService.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMDownloadRangeImpl.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMDownloadRangeInterceptor.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMDownloadRangeResponseBody.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMHttpClientHelper.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMHttpService.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMRetrofitClient.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/UploadInterceptor.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/UploadRequestBody.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMUploadInterceptor.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMUploadRequestBody.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/HttpCallback.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/DownloadProgressListener.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/CMDownloadProgressListener.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/CMHttpCallback.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/CMUploadProgressListener.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/CMHttpProgressCallback.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/CMStaticWrapper.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/HttpController.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/CMHttpController.java" />
+        <option value="$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/CMHttpTracker.java" />
       </list>
     </option>
   </component>
@@ -3246,7 +3263,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3258,6 +3275,60 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exam" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exam" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exam" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exam" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exam" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eduand" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -3358,7 +3429,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532676873575" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532678444770" />
       </method>
     </configuration>
     <configuration default="false" name="AndroidTest05" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
@@ -3406,7 +3477,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532676873575" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532678444770" />
       </method>
     </configuration>
     <configuration default="false" name="ExampleInstrumentedT..." type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests" temporary="true" nameIsGenerated="true">
@@ -3454,7 +3525,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532676873575" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532678444770" />
       </method>
     </configuration>
     <configuration default="false" name="MySocketServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -3573,7 +3644,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532676873575" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532678444771" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3621,7 +3692,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532676873575" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532678444771" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3804,7 +3875,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532676873575" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1532678444772" />
       </method>
     </configuration>
     <list size="6">
@@ -3893,12 +3964,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="729" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5281532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37387386" sideWeight="0.50852877" order="14" side_tool="true" content_ui="tabs" />
-      <window_info id="Logcat" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45886075" sideWeight="0.4914712" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45886075" sideWeight="0.4914712" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -3916,7 +3988,7 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40306947" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3449367" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3449367" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -3996,34 +4068,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.0.6/b65373443c52d95b6ccb0e83f303f6a6d438fbc0/rxjava-2.0.6-sources.jar!/io/reactivex/functions/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.8.0/db21293949e200f08d5325e8a8eefdcc9134b752/okhttp-3.8.0-sources.jar!/okhttp3/Call.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="56" column="11" lean-forward="false" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.8.0/db21293949e200f08d5325e8a8eefdcc9134b752/okhttp-3.8.0-sources.jar!/okhttp3/OkHttpClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="201" column="28" lean-forward="true" selection-start-line="201" selection-start-column="28" selection-end-line="201" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.8.0/db21293949e200f08d5325e8a8eefdcc9134b752/okhttp-3.8.0-sources.jar!/okhttp3/CookieJar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="60" column="29" lean-forward="false" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.8.0/db21293949e200f08d5325e8a8eefdcc9134b752/okhttp-3.8.0-sources.jar!/okhttp3/Cookie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -4113,30 +4157,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/UploadInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#504#505#0" expanded="false" />
-            <element signature="e#544#545#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/UploadRequestBody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1138#1139#0" expanded="false" />
-            <element signature="e#1186#1187#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/test/java/com/cmcc/exam/ExampleUnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
@@ -4178,14 +4198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-853">
           <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/CMStaticWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -4238,14 +4250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/CMHttpTracker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/CMBaseResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -4294,24 +4298,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/RetrofitClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding>
-            <element signature="e#815#816#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/HttpController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-149">
-          <caret line="50" column="12" lean-forward="false" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/widget/MsRippleButton.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -4319,14 +4305,6 @@
           <folding>
             <element signature="e#30#481#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/eduand/LoginApiActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -4362,26 +4340,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding>
-            <element signature="e#3278#3279#0" expanded="true" />
-            <element signature="e#3323#3324#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1388">
-          <caret line="117" column="17" lean-forward="false" selection-start-line="117" selection-start-column="17" selection-end-line="117" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/DownloadRangeResponseBody.java">
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMDownloadRangeResponseBody.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="97" column="17" lean-forward="false" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
@@ -4389,7 +4348,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpClientHelper.java">
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMHttpClientHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="6" />
@@ -4397,11 +4356,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/HttpService.java">
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMHttpService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="96">
+          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMRetrofitClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMUploadInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMUploadRequestBody.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMDownloadRangeInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="26" column="14" lean-forward="false" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/core/CMDownloadRangeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/CMDownloadProgressListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/CMHttpCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/CMHttpProgressCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/listener/CMUploadProgressListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/CMStaticWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/CMHttpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="58" column="37" lean-forward="true" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/retrofitwrapper2/src/main/java/com/cmcc/library/wrapper/retrofit/model/CMHttpTracker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cmcc/exam/eduand/LoginApiActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1360">
+          <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

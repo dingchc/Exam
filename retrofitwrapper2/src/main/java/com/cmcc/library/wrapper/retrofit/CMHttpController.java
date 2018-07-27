@@ -6,12 +6,12 @@ import android.graphics.BitmapFactory;
 import android.text.TextUtils;
 
 import com.cmcc.library.wrapper.retrofit.core.CMHttpException;
-import com.cmcc.library.wrapper.retrofit.core.DownloadRangeImpl;
-import com.cmcc.library.wrapper.retrofit.core.HttpService;
-import com.cmcc.library.wrapper.retrofit.core.RetrofitClient;
-import com.cmcc.library.wrapper.retrofit.listener.HttpCallback;
-import com.cmcc.library.wrapper.retrofit.listener.HttpProgressCallback;
-import com.cmcc.library.wrapper.retrofit.listener.UploadProgressListener;
+import com.cmcc.library.wrapper.retrofit.core.CMDownloadRangeImpl;
+import com.cmcc.library.wrapper.retrofit.core.CMHttpService;
+import com.cmcc.library.wrapper.retrofit.core.CMRetrofitClient;
+import com.cmcc.library.wrapper.retrofit.listener.CMHttpCallback;
+import com.cmcc.library.wrapper.retrofit.listener.CMHttpProgressCallback;
+import com.cmcc.library.wrapper.retrofit.listener.CMUploadProgressListener;
 import com.cmcc.library.wrapper.retrofit.model.CMHttpTracker;
 import com.cmcc.library.wrapper.retrofit.model.CMResponse;
 import com.cmcc.library.wrapper.retrofit.model.CMBaseResponse;
@@ -48,18 +48,18 @@ import io.reactivex.schedulers.Schedulers;
  *         Created by Ding on 2/28/17.
  */
 
-public enum HttpController {
+public enum CMHttpController {
 
     /**
-     *
+     * 实例
      */
     INSTANCE;
 
     private final String EMPTY_STR = "";
     private ConcurrentHashMap<CMHttpTracker, WeakReference<ResourceObserver>> requestMap;
 
-    HttpController() {
-        requestMap = new ConcurrentHashMap();
+    CMHttpController() {
+        requestMap = new ConcurrentHashMap<>();
     }
 
     /**
@@ -79,7 +79,7 @@ public enum HttpController {
      * @param params   参数
      * @param callback 回调
      */
-    public CMHttpTracker doGet(final String url, Map<String, String> params, final HttpCallback callback) {
+    public CMHttpTracker doGet(final String url, Map<String, String> params, final CMHttpCallback callback) {
 
         final CMHttpTracker tracker = new CMHttpTracker(url);
 
@@ -134,7 +134,7 @@ public enum HttpController {
         };
 
         requestMap.put(tracker, new WeakReference(subscriber));
-        RetrofitClient.getInstance().createService(HttpService.class).doGet(url).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(subscriber);
+        CMRetrofitClient.getInstance().createService(CMHttpService.class).doGet(url).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(subscriber);
 
         return tracker;
     }
@@ -175,7 +175,7 @@ public enum HttpController {
      * @param params   参数
      * @param callback 回调
      */
-    public CMHttpTracker doPost(final String url, Map<String, String> params, final HttpCallback callback) {
+    public CMHttpTracker doPost(final String url, Map<String, String> params, final CMHttpCallback callback) {
 
         final CMHttpTracker tracker = new CMHttpTracker(url);
 
@@ -219,7 +219,7 @@ public enum HttpController {
         };
 
         requestMap.put(tracker, new WeakReference(subscriber));
-        RetrofitClient.getInstance().createService(HttpService.class).doPost(url, params).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(subscriber);
+        CMRetrofitClient.getInstance().createService(CMHttpService.class).doPost(url, params).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(subscriber);
 
         return tracker;
     }
@@ -232,7 +232,7 @@ public enum HttpController {
      * @param clazz    转Json的类
      * @param callback 回调
      */
-    public CMHttpTracker doPost(final String url, Map<String, String> params, final Class<? extends CMBaseResponse> clazz, final HttpCallback callback) {
+    public CMHttpTracker doPost(final String url, Map<String, String> params, final Class<? extends CMBaseResponse> clazz, final CMHttpCallback callback) {
 
         final CMHttpTracker tracker = new CMHttpTracker(url);
 
@@ -280,7 +280,7 @@ public enum HttpController {
         };
 
         requestMap.put(tracker, new WeakReference(subscriber));
-        RetrofitClient.getInstance().createService(HttpService.class).doPost(url, params).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(subscriber);
+        CMRetrofitClient.getInstance().createService(CMHttpService.class).doPost(url, params).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(subscriber);
 
         return tracker;
     }
@@ -293,7 +293,7 @@ public enum HttpController {
      * @param type     转Json的TypeToken
      * @param callback 回调
      */
-    public CMHttpTracker doPost(final String url, Map<String, String> params, final Type type, final HttpCallback callback) {
+    public CMHttpTracker doPost(final String url, Map<String, String> params, final Type type, final CMHttpCallback callback) {
 
         final CMHttpTracker tracker = new CMHttpTracker(url);
 
@@ -342,7 +342,7 @@ public enum HttpController {
         };
 
         requestMap.put(tracker, new WeakReference(subscriber));
-        RetrofitClient.getInstance().createService(HttpService.class).doPost(url, params).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(subscriber);
+        CMRetrofitClient.getInstance().createService(CMHttpService.class).doPost(url, params).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(subscriber);
 
         return tracker;
     }
@@ -354,7 +354,7 @@ public enum HttpController {
      * @param callback 回调
      * @return 跟踪
      */
-    public CMHttpTracker downloadFileByRange(final String url, final HttpProgressCallback callback) {
+    public CMHttpTracker downloadFileByRange(final String url, final CMHttpProgressCallback callback) {
 
         // 检查全局上下文是否已设置
         if (CMUtil.checkObjNotNull(callback) && !CMUtil.checkObjNotNull(CMStaticWrapper.getAppContext())) {
@@ -413,7 +413,7 @@ public enum HttpController {
             }
         };
 
-        final DownloadRangeImpl downloadImpl = new DownloadRangeImpl(url, callback);
+        final CMDownloadRangeImpl downloadImpl = new CMDownloadRangeImpl(url, callback);
 
         // 文件已存在，直接返回
         if (CMUtil.checkFileExist(downloadImpl.getDestPath())) {
@@ -429,7 +429,7 @@ public enum HttpController {
 
         requestMap.put(tracker, new WeakReference(subscriber));
 
-        RetrofitClient.getInstance().createDownloadRangeService(HttpService.class, downloadImpl).downloadFile(url)
+        CMRetrofitClient.getInstance().createDownloadRangeService(CMHttpService.class, downloadImpl).downloadFile(url)
                 .map(new Function<ResponseBody, String>() {
 
                     @Override
@@ -474,7 +474,7 @@ public enum HttpController {
      * @param uploadFileInfoList 文件list
      * @param callback           回调
      */
-    public CMHttpTracker doUpload(final String url, TreeMap<String, String> paramMap, final Type type, final List<CMUploadFileInfo> uploadFileInfoList, final HttpProgressCallback callback) {
+    public CMHttpTracker doUpload(final String url, TreeMap<String, String> paramMap, final Type type, final List<CMUploadFileInfo> uploadFileInfoList, final CMHttpProgressCallback callback) {
 
         if (uploadFileInfoList == null || uploadFileInfoList.size() <= 0) {
 
@@ -488,7 +488,7 @@ public enum HttpController {
         final CMHttpTracker tracker = new CMHttpTracker(url);
 
         // 上传的回调
-        UploadProgressListener progressListener = new UploadProgressListener() {
+        CMUploadProgressListener progressListener = new CMUploadProgressListener() {
             @Override
             public void progress(long current, long total, boolean done) {
 
@@ -500,7 +500,7 @@ public enum HttpController {
         };
 
         // 创建调用
-        HttpService api = RetrofitClient.getInstance().createUploadService(HttpService.class, progressListener);
+        CMHttpService api = CMRetrofitClient.getInstance().createUploadService(CMHttpService.class, progressListener);
 
         CMUploadFileInfo[] fileInfoArray = new CMUploadFileInfo[uploadFileInfoList.size()];
 
@@ -676,7 +676,7 @@ public enum HttpController {
      * @param downloadRangeImpl 回调
      * @return true 保存成功、false 保存失败
      */
-    public static boolean writeFile(ResponseBody responseBody, String path, boolean isSupportRange, DownloadRangeImpl downloadRangeImpl) throws Exception {
+    public static boolean writeFile(ResponseBody responseBody, String path, boolean isSupportRange, CMDownloadRangeImpl downloadRangeImpl) throws Exception {
 
         boolean ret = false;
 
@@ -753,7 +753,7 @@ public enum HttpController {
      */
     public String getDownloadTempPath(String url) {
 
-        return DownloadRangeImpl.createTempPath(url);
+        return CMDownloadRangeImpl.createTempPath(url);
     }
 
     /**
@@ -764,7 +764,7 @@ public enum HttpController {
      */
     public String getDownloadDestPath(String url) {
 
-        return DownloadRangeImpl.createDestPath(url);
+        return CMDownloadRangeImpl.createDestPath(url);
     }
 
 }

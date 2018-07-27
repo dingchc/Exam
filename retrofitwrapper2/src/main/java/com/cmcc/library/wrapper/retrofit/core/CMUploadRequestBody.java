@@ -1,13 +1,12 @@
-package com.cmcc.library.wrapper.retrofit;
+package com.cmcc.library.wrapper.retrofit.core;
 
 import android.animation.ValueAnimator;
 import android.os.Looper;
 import android.os.Message;
 
 
-import com.cmcc.library.wrapper.retrofit.listener.UploadProgressListener;
+import com.cmcc.library.wrapper.retrofit.listener.CMUploadProgressListener;
 import com.cmcc.library.wrapper.retrofit.model.CMProgressInfo;
-import com.cmcc.library.wrapper.retrofit.util.CMAppLogger;
 import com.cmcc.library.wrapper.retrofit.util.CMUtil;
 
 import java.io.IOException;
@@ -21,17 +20,19 @@ import okio.Okio;
 import okio.Sink;
 
 /**
- * Created by liupeng_a on 2017/1/10.
+ * 上传请求Body
+ *
+ * @author Ding
  */
 
-public class UploadRequestBody extends RequestBody {
+public class CMUploadRequestBody extends RequestBody {
 
     private RequestBody requestBody;
-    private UploadProgressListener listener;
+    private CMUploadProgressListener listener;
     private BufferedSink bufferedSink;
     private UploadHandler progressHandler;
 
-    public UploadRequestBody(RequestBody requestBody, UploadProgressListener listener) {
+    CMUploadRequestBody(RequestBody requestBody, CMUploadProgressListener listener) {
         this.requestBody = requestBody;
         this.listener = listener;
         progressHandler = new UploadHandler(Looper.getMainLooper());
@@ -59,8 +60,6 @@ public class UploadRequestBody extends RequestBody {
 
     private Sink sink(Sink sink) {
 
-        CMAppLogger.i(CMAppLogger.TAG1, "sink");
-
         return new ForwardingSink(sink) {
             long current = 0L;
             long total = 0L;
@@ -84,8 +83,6 @@ public class UploadRequestBody extends RequestBody {
 
                     if (lastNotifyTime <= 0 || duration >= 10 || current == total) {
 
-                        CMAppLogger.i(CMAppLogger.TAG1, "current=" + current + ", total=" + total);
-
                         CMProgressInfo progressInfo = new CMProgressInfo(current, total);
 
                         Message msg = Message.obtain();
@@ -107,9 +104,17 @@ public class UploadRequestBody extends RequestBody {
      */
     class UploadHandler extends android.os.Handler {
 
-        private final int MAX_WAIT_TIME = 0; //等待次数
-        private final int ANIMATOR_DURATION = 500; //动画时长
-        public static final int WHAT_UPDATE = 0;
+        /**
+         * 等待次数
+         */
+        private final int MAX_WAIT_TIME = 0;
+
+        /**
+         * 动画时长
+         */
+        private final int ANIMATOR_DURATION = 500;
+
+        static final int WHAT_UPDATE = 0;
 
         private int updateTimes = 0;
         private long lastTimeMillis;

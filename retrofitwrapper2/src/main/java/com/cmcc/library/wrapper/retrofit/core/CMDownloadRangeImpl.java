@@ -5,8 +5,8 @@ import android.os.Message;
 import android.text.TextUtils;
 
 import com.cmcc.library.wrapper.retrofit.model.CMProgressInfo;
-import com.cmcc.library.wrapper.retrofit.listener.DownloadProgressListener;
-import com.cmcc.library.wrapper.retrofit.listener.HttpProgressCallback;
+import com.cmcc.library.wrapper.retrofit.listener.CMDownloadProgressListener;
+import com.cmcc.library.wrapper.retrofit.listener.CMHttpProgressCallback;
 import com.cmcc.library.wrapper.retrofit.util.CMDirUtil;
 import com.cmcc.library.wrapper.retrofit.util.CMUtil;
 
@@ -18,7 +18,7 @@ import com.cmcc.library.wrapper.retrofit.util.CMUtil;
  *         Created by ding on 4/20/17.
  */
 
-public class DownloadRangeImpl implements DownloadProgressListener {
+public class CMDownloadRangeImpl implements CMDownloadProgressListener {
 
     /**
      * 更新进度的最小间隔时间
@@ -28,7 +28,7 @@ public class DownloadRangeImpl implements DownloadProgressListener {
     /**
      * 回调
      */
-    private HttpProgressCallback callback;
+    private CMHttpProgressCallback callback;
 
     /**
      * 是否支持断点续传
@@ -60,7 +60,7 @@ public class DownloadRangeImpl implements DownloadProgressListener {
      */
     private long lastNotifyTime;
 
-    public DownloadRangeImpl(String url, HttpProgressCallback callback) {
+    public CMDownloadRangeImpl(String url, CMHttpProgressCallback callback) {
         this.callback = callback;
 
         destPath = createDestPath(url);

@@ -17,13 +17,12 @@ import com.cmcc.exam.R;
 import com.cmcc.exam.utils.ACache;
 import com.cmcc.exam.utils.AESUtils;
 import com.cmcc.exam.utils.ParamsUtil;
-import com.cmcc.library.wrapper.retrofit.HttpController;
-import com.cmcc.library.wrapper.retrofit.listener.HttpCallback;
-import com.cmcc.library.wrapper.retrofit.listener.HttpProgressCallback;
+import com.cmcc.library.wrapper.retrofit.CMHttpController;
+import com.cmcc.library.wrapper.retrofit.listener.CMHttpCallback;
+import com.cmcc.library.wrapper.retrofit.listener.CMHttpProgressCallback;
 import com.cmcc.library.wrapper.retrofit.model.CMBaseResponse;
 import com.cmcc.library.wrapper.retrofit.model.CMUploadFileInfo;
 import com.cmcc.library.wrapper.retrofit.util.CMAppLogger;
-import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
@@ -158,7 +157,7 @@ public class LoginApiActivity extends AppCompatActivity {
 
 //        String url = "https://edu.10086.cn/eduapi/kaptcha.jpg?update=1";
 
-        HttpController.INSTANCE.doGet(url, new TreeMap<String, String>(), new HttpCallback() {
+        CMHttpController.INSTANCE.doGet(url, new TreeMap<String, String>(), new CMHttpCallback() {
             @Override
             public void onSuccess(CMBaseResponse response, String json) {
 
@@ -167,7 +166,7 @@ public class LoginApiActivity extends AppCompatActivity {
 
                     AppLogger.i("data.length=" + data.length);
 
-                    HttpController.printByteArray(data);
+                    CMHttpController.printByteArray(data);
 
                     Bitmap bitmap = BitmapFactory.decodeByteArray(data, 0,
                             data.length);
@@ -531,7 +530,7 @@ public class LoginApiActivity extends AppCompatActivity {
         paramMap.put("type", "post");
         paramMap.put("condition", ParamsUtil.getParams(paramMap));
 
-        HttpController.INSTANCE.doPost(url, paramMap, new HttpCallback() {
+        CMHttpController.INSTANCE.doPost(url, paramMap, new CMHttpCallback() {
             @Override
             public void onSuccess(CMBaseResponse response, String json) {
 
@@ -584,7 +583,7 @@ public class LoginApiActivity extends AppCompatActivity {
         List<CMUploadFileInfo> fileList = new ArrayList<>();
         fileList.add(new CMUploadFileInfo(picturePath, "file"));
 
-        HttpController.INSTANCE.doUpload(url, partMap, null, fileList, new HttpProgressCallback() {
+        CMHttpController.INSTANCE.doUpload(url, partMap, null, fileList, new CMHttpProgressCallback() {
             @Override
             public void progress(long current, long total, boolean done) {
                 CMAppLogger.i("current=" + current + ", total=" + total);

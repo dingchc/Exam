@@ -3,7 +3,7 @@ package com.cmcc.library.wrapper.retrofit.core;
 import android.text.TextUtils;
 
 
-import com.cmcc.library.wrapper.retrofit.listener.DownloadProgressListener;
+import com.cmcc.library.wrapper.retrofit.listener.CMDownloadProgressListener;
 import com.cmcc.library.wrapper.retrofit.util.CMAppLogger;
 import com.cmcc.library.wrapper.retrofit.util.CMUtil;
 
@@ -22,11 +22,11 @@ import okhttp3.Response;
  *         Created by ding on 2017/4/10.
  */
 
-public class DownloadRangeInterceptor implements Interceptor {
+public class CMDownloadRangeInterceptor implements Interceptor {
 
-    protected DownloadProgressListener listener;
+    protected CMDownloadProgressListener listener;
 
-    DownloadRangeInterceptor(DownloadProgressListener listener) {
+    CMDownloadRangeInterceptor(CMDownloadProgressListener listener) {
         this.listener = listener;
     }
 
@@ -74,14 +74,14 @@ public class DownloadRangeInterceptor implements Interceptor {
         }
 
         // 设置已下载大小
-        if (CMUtil.checkObjNotNull(listener) && listener instanceof DownloadRangeImpl && isSupportRange) {
-            DownloadRangeImpl downloadImpl = (DownloadRangeImpl) listener;
+        if (CMUtil.checkObjNotNull(listener) && listener instanceof CMDownloadRangeImpl && isSupportRange) {
+            CMDownloadRangeImpl downloadImpl = (CMDownloadRangeImpl) listener;
             downloadImpl.setDownloadSize(downloadSize);
         }
 
         return response
                 .newBuilder()
-                .body(new DownloadRangeResponseBody(response.body(), listener, isSupportRange))
+                .body(new CMDownloadRangeResponseBody(response.body(), listener, isSupportRange))
                 .build();
     }
 
@@ -94,8 +94,8 @@ public class DownloadRangeInterceptor implements Interceptor {
 
         long downloadSize = 0;
 
-        if (CMUtil.checkObjNotNull(listener) && listener instanceof DownloadRangeImpl) {
-            DownloadRangeImpl downloadImpl = (DownloadRangeImpl) listener;
+        if (CMUtil.checkObjNotNull(listener) && listener instanceof CMDownloadRangeImpl) {
+            CMDownloadRangeImpl downloadImpl = (CMDownloadRangeImpl) listener;
 
             String filePath = downloadImpl.getTempPath();
 

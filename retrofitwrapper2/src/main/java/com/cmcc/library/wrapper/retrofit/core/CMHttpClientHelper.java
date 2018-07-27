@@ -1,8 +1,8 @@
 package com.cmcc.library.wrapper.retrofit.core;
 
 
-import com.cmcc.library.wrapper.retrofit.listener.DownloadProgressListener;
-import com.cmcc.library.wrapper.retrofit.listener.UploadProgressListener;
+import com.cmcc.library.wrapper.retrofit.listener.CMDownloadProgressListener;
+import com.cmcc.library.wrapper.retrofit.listener.CMUploadProgressListener;
 import com.cmcc.library.wrapper.retrofit.util.CMAppLogger;
 
 import java.util.concurrent.TimeUnit;
@@ -15,7 +15,7 @@ import okhttp3.logging.HttpLoggingInterceptor;
  * @author Ding
  */
 
-public class HttpClientHelper {
+public class CMHttpClientHelper {
 
     private static final int CONNECT_TIMEOUT = 30000;
     private static final int READ_TIMEOUT = 30000;
@@ -52,12 +52,12 @@ public class HttpClientHelper {
      * @param listener 回调
      * @return OkHttpClient
      */
-    static OkHttpClient getDownloadHttpClient(DownloadProgressListener listener) {
+    static OkHttpClient getDownloadHttpClient(CMDownloadProgressListener listener) {
 
         builder.interceptors().clear();
 
         return builder
-                .addInterceptor(new DownloadRangeInterceptor(listener))
+                .addInterceptor(new CMDownloadRangeInterceptor(listener))
                 .build();
 
 
@@ -69,13 +69,13 @@ public class HttpClientHelper {
      * @param listener 回调
      * @return OkHttpClient
      */
-    public static OkHttpClient getUploadHttpClient(UploadProgressListener listener) {
+    public static OkHttpClient getUploadHttpClient(CMUploadProgressListener listener) {
 
 
         builder.interceptors().clear();
 
         return builder
-                .addInterceptor(new UploadInterceptor(listener))
+                .addInterceptor(new CMUploadInterceptor(listener))
                 .build();
     }
 }

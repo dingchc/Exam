@@ -27,8 +27,8 @@ import com.cmcc.exam.db.entry.UserEntry;
 import com.cmcc.exam.net.MySocketClient;
 import com.cmcc.exam.net.ProtocolUtil;
 import com.cmcc.exam.net.TcpClient;
-import com.cmcc.library.wrapper.retrofit.HttpController;
-import com.cmcc.library.wrapper.retrofit.listener.HttpCallback;
+import com.cmcc.library.wrapper.retrofit.CMHttpController;
+import com.cmcc.library.wrapper.retrofit.listener.CMHttpCallback;
 import com.cmcc.library.wrapper.retrofit.model.CMBaseResponse;
 import com.cmcc.library.wrapper.retrofit.util.CMAppLogger;
 
@@ -167,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
 
         String url = "https://edu.10086.cn" + "/eduapi/login/user/login";
 
-        HttpController.INSTANCE.doPost(url, new TreeMap<String, String>(), new HttpCallback() {
+        CMHttpController.INSTANCE.doPost(url, new TreeMap<String, String>(), new CMHttpCallback() {
             @Override
             public void onSuccess(CMBaseResponse response, String json) {
 

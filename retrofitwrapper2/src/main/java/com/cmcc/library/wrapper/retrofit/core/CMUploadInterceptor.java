@@ -1,8 +1,7 @@
 package com.cmcc.library.wrapper.retrofit.core;
 
 
-import com.cmcc.library.wrapper.retrofit.UploadRequestBody;
-import com.cmcc.library.wrapper.retrofit.listener.UploadProgressListener;
+import com.cmcc.library.wrapper.retrofit.listener.CMUploadProgressListener;
 
 import java.io.IOException;
 
@@ -11,14 +10,15 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 /**
- * Created by liupeng_a on 2017/1/10.
+ * 上传拦截器
+ * @author Ding
  */
 
-public class UploadInterceptor implements Interceptor {
+public class CMUploadInterceptor implements Interceptor {
 
-    private UploadProgressListener listener;
+    private CMUploadProgressListener listener;
 
-    public UploadInterceptor(UploadProgressListener listener) {
+    CMUploadInterceptor(CMUploadProgressListener listener) {
         this.listener = listener;
     }
 
@@ -27,7 +27,7 @@ public class UploadInterceptor implements Interceptor {
         Request originalRequest = chain.request();
 
         Request request = originalRequest.newBuilder()
-                .method(originalRequest.method(), new UploadRequestBody(originalRequest.body(), listener))
+                .method(originalRequest.method(), new CMUploadRequestBody(originalRequest.body(), listener))
                 .build();
 
         return chain.proceed(request);
