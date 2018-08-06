@@ -374,7 +374,7 @@ public class LoginApiActivity extends AppCompatActivity {
                             CMAppLogger.i("cacheString=" + cacheString);
                         }
 
-                        return "";
+                        return json;
                     }
                 })
                 .observeOn(AndroidSchedulers.mainThread())

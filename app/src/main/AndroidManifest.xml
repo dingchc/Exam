@@ -61,6 +61,7 @@
             </intent-filter>
         </activity>
         <activity
+
             android:name="com.cmcc.exam.LoginActivity"
             android:label="@string/title_activity_login">
 
