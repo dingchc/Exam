@@ -25,7 +25,7 @@ public class MsApplication extends Application {
         CMHttpController.INSTANCE.setAppContext(this);
 
         // .addMigrations(AppDatabase.migrations)
-        db = Room.databaseBuilder(this, AppDatabase.class, "app_db").fallbackToDestructiveMigration().build();
+        db = Room.databaseBuilder(this, AppDatabase.class, "app_db1").fallbackToDestructiveMigration().build();
     }
 
     public static MsApplication getApp() {
@@ -34,6 +34,6 @@ public class MsApplication extends Application {
     }
 
     public static AppDatabase getDb() {
-        return db;
+        return null;
     }
 }

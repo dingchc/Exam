@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * @author Ding
  * Created by ding on 11/21/17.
  */
 
@@ -26,7 +27,7 @@ public class MemberActivity extends AppCompatActivity {
         ActivityMembersBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_members);
 
         List<String> memberList = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 50; i++) {
             memberList.add("stu " + i);
         }
         binding.setMemberList(memberList);

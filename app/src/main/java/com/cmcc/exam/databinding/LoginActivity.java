@@ -14,6 +14,7 @@ import com.cmcc.exam.MyUser;
 import com.cmcc.exam.R;
 
 /**
+ * @author Ding
  * Created by ding on 11/21/17.
  */
 
@@ -29,7 +30,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
 
-        LoginActivityBinding binding = DataBindingUtil.setContentView(this, R.layout.login_activity);
+        com.cmcc.exam.databinding.LoginActivityBinding binding = DataBindingUtil.setContentView(this, R.layout.login_activity);
         mMyUser = new MyUser("dingchc", "工程师", "一年级一班");
 
         binding.setUser(mMyUser);
@@ -40,7 +41,8 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(LoginActivity.this, MemberActivity.class));
+//                startActivity(new Intent(LoginActivity.this, MemberActivity.class));
+                startActivity(new Intent(LoginActivity.this, MasterActivity.class));
             }
         });
     }
